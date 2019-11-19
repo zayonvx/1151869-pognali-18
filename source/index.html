@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="logo page-header__logo">
+      <img class="logo__img" src="#" alt="Логотип Погнали">
+    </a>
+    <button class="button-toogle page-header__button-toogle" type="button" aria-label="Открыть меню навигации">
+    </button>
+    <div class="page-header__wrapper">
+      <nav class="page-nav">
+        <ul class="site-list page-nav__site-list">
+          <li class="site-list__item"><a href="#" class="site-list__link">О сервисе</a></li>
+          <li class="site-list__item"><a href="catalog.html" class="site-list__link">Направления</a></li>
+          <li class="site-list__item"><a href="form.html" class="site-list__link">Попутчики</a></li>
+        </ul>
+      </nav>
+      <ul class="user-list page-header__user-list">
+        <li class="user-list__item">
+          <a href="#" class="button user-list__button button_size_large">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="contacts-list page-header__contacts-list">
+        <li class="contacts-list__item">
+          <a class="contacts-tel contacts-tel_bg_blue" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts-list__item">
+          <a class="contacts-mail contacts-mail_bg_blue" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="social-list page-header__social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Фейсбук"></a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Инстаграмме"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="about">
+      <header class="promo-header">
+        <h1 class="title promo-header__title">В путешествие с крутыми попутчиками!</h1>
+        <ul class="contacts-list promo-header__contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-tel contacts-tel_bg_yellow" href="tel:88005558628" aria-label="телефон 8-800-555-86-28"></a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-mail contacts-mail_bg_yellow" href="mailto:mail@htmlacademy.ru" aria-label="электронная почта mail@htmlacademy.ru"></a>
+          </li>
+        </ul>
+        <ul class="user-list promo-header__user-list">
+          <li class="user-list__item">
+            <a href="#" class="button user-list__button button_size_small">Авторизация</a>
+          </li>
+        </ul>
+      </header>
+      <div class="about-review">
+        <blockquote class="about-review__quote">Лучшее приложение, что я видел в жизни!</blockquote>
+        <cite class="about-review__author">Мурат Эльтазин - главный редактор газеты «гаджетлайф»</cite>
+      </div>
+      <ol class="info-list about__info-list">
+        <li class="info-list__item info-list__item_bg_orange">Выберите направление</li>
+        <li class="info-list__item info-list__item_bg_dark-orange">Изучите идеи путешественников</li>
+        <li class="info-list__item info-list__item_bg_yellow">Находите тех, кто похож на вас</li>
+        <li class="info-list__item info-list__item_bg_light-yellow">Путешествуйте вместе!</li>
+      </ol>
+      <footer class="about__footer">
+        <h2 class="title about__title">О сервисе</h2>
+        <p class="text about__text text_color_white">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <b class="text about__text text_color_white text_weight_bold">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</b>
+      </footer>
+    </section>
+    <section class="directions">
+      <h2 class="title directions__title">Направления</h2>
+      <p class="text directions__text text_color_black">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
+        странах, куда хотели бы отправиться и чем можно
+        там заняться.</p>
+      <ul class="directions-list directions__directions-list">
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="#" alt="Таиланд">
+          <h3 class="directions-list__title">Таиланд</h3>
+          <p class="directions-list__subtitle">Джунгли зовут!</p>
+          <span class="directions-list__likes">18321</span>
+        </li>
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="#" alt="Франция">
+          <h3 class="directions-list__title">Франция</h3>
+          <p class="directions-list__subtitle">Трэ бьен, манифик!</p>
+          <span class="directions-list__likes">12518</span>
+        </li>
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="#" alt="Чехия">
+          <h3 class="directions-list__title">Чехия</h3>
+          <p class="directions-list__subtitle">Закаулки старой Европы</p>
+          <span class="directions-list__likes">5326</span>
+        </li>
+      </ul>
+      <a class="button directions__button button_format_round" href="#">Показать всех</a>
+    </section>
+    <section class="mates">
+      <h2 class="title mates__title">Попутчики</h2>
+      <p class="text mates__text text_color_white">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+      </p>
+      <b class="text mates__text text_weight_bold">Теперь можно легко найти единомышленников!</b>
+      <ul class="mates-list mates__mates-list">
+        <li class="mates-list__item">
+          <h3 class="title mates-list__title title_color_blue">Таня Фирсова</h3>
+          <p class="text mates_text text_weight_light ">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <img class="mates-image mates-list__mates-image" src="#" alt="Таня Фирсова">
+          <h4 class="visually-hidden">желает отправиться:</h4>
+          <ul class="country-list mates-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Шри-ланка">
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Тайланд">
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Сейшелы">
+            </li>
+          </ul>
+          <h4 class="visually-hidden">доступный транспорт:</h4>
+          <ul class="transport-list mates-list__transport-list">
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Велосипед">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+        </li>
+        <li class="mates-list__item">
+          <h3 class="title mates-list__title title_color_blue">Петя Демин</h3>
+          <p class="text mates_text text_weight_light ">#бургер #бар #футбол #концерт #крафт</p>
+          <img class="mates-image mates-list__mates-image" src="#" alt="Петя Демин">
+          <h4 class="visually-hidden">желает отправиться:</h4>
+          <ul class="country-list mates-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Бельгия">
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Чехия">
+            </li>
+          </ul>
+          <h4 class="visually-hidden">доступный транспорт:</h4>
+          <ul class="transport-list mates-list__transport-list">
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="#" class="button mates__button button_format_round">Показать всех</a>
+    </section>
+    <section class="price">
+      <h2 class="title price__title">Добавьте свой профиль</h2>
+      <ul class="price-list price__price-list">
+        <li class="price-list__item">
+          <p class="text text_color_black">Базовое размещение</p>
+        </li>
+        <li class="price-list__item">
+          <p class="text text_color_black">Вывод на первых позициях 99 руб./мес</p>
+        </li>
+        <li class="price-list__item">
+          <p class="text text_color_black">Кастомный цвет карточки 59 руб./мес</p>
+        </li>
+      </ul>
+      <a class="button price__button button_bg_transparent" href="#">Показать тарифы для бизнеса</a>
+    </section>
+    <footer class="page-footer">
+      <h2 class="title page-footer__title title_color_blue">Погнали?</h2>
+      <ul class="social-list page-footer__social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="cсылка на фейсбук"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на инстраграмм"></a>
+        </li>
+      </ul>
+      <a class="copyright-icon page-footer__copyright-icon" href="htpps://htmlacademy.ru">Разработано<span class="visually-hidden"> в HTML Academy</span></a>
+    </footer>
+  </main>
+</body>
+
 </html>
