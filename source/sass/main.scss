@@ -1,9 +1,10 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "normalize";
 
 body {
-  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-family: $font-default;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -16,6 +17,17 @@ a {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 

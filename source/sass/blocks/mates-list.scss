@@ -1,0 +1,10 @@
+.mates-list {
+  @include list-style;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.mates-list__item {
+  background-color: $white;
+  margin-bottom: 10px;
+}

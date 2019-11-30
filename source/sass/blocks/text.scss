@@ -1,0 +1,28 @@
+.text {
+  margin: 0;
+  line-height: 22px;
+}
+
+.text_color_white {
+  color: $white;
+}
+
+.text_weight_bold {
+  font-weight: 800;
+}
+
+.text_color_gray {
+  color: $gray;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.3;
+}
+
+.text_lh_30 {
+  line-height: 30px;
+}
+
+.text_weight_light {
+  font-weight: 200;
+}
