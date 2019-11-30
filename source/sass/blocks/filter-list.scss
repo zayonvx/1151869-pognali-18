@@ -1,0 +1,18 @@
+.filter-list {
+  @include list-style;
+  margin: 0;
+}
+
+.filter-list__item {
+  background-color: $white;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 22px;
+}
+
+.filter-list__likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 800;
+  color: $blue;
+}
