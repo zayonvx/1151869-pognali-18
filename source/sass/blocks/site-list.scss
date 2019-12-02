@@ -13,7 +13,8 @@
 
 .site-list__item {
   margin-bottom: 16px;
-  &:last-child {
+
+  &:nth-last-child() {
     margin-bottom: 0;
   }
 }
