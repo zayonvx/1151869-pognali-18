@@ -1,34 +1,56 @@
 .text {
   margin: 0;
+  font-style: normal;
+  line-height: 400;
   line-height: 22px;
 }
 
-.text_color_white {
-  color: $white;
-}
-
-.text_weight_bold {
-  font-weight: 800;
-}
-
-.text_color_gray {
-  color: $gray;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  opacity: 0.3;
-}
-
-.text_lh_30 {
-  line-height: 30px;
-}
-
-.text_weight_light {
+.text--weight_light {
   font-weight: 200;
 }
 
-.text_size_small {
-  font-size: 15px;
-  line-height: 18px;
+.text--weight_medium {
+  font-weight: 500;
+}
+
+.text--weight_bold {
+  font-weight: 800;
+}
+
+.text--c_gray {
   color: $gray;
 }
+
+.text--c_gray-transparent {
+  color: $gray;
+  opacity: 0.6;
+}
+
+.text--c_white {
+  color: $white;
+}
+
+.text--s_16 {
+  font-size: 16px;
+}
+
+.text--s_14 {
+  font-size: 14px;
+}
+
+.text--s_15 {
+  font-size: 15px;
+}
+
+.text--lh_18 {
+  line-height: 18px;
+}
+
+.text--lh_21 {
+  line-height: 21px;
+}
+
+.text--lh_30 {
+  line-height: 30px;
+}
+

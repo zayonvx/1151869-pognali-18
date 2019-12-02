@@ -1,40 +1,47 @@
 .title {
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 24px;
-  color: $orange;
-  margin: 0;
-}
-
-.title_size_large {
-  color: $white;
   font-size: 36px;
   line-height: 40px;
+  color: $white;
 }
 
-.title_color_blue {
-  color: $blue;
-  font-size: 21px;
-  line-height: 21px;
+.title--s_15 {
+  font-size: 15px;
+  line-height: 18px;
 }
 
-.title_size_medium {
+.title--s_20 {
   font-size: 20px;
   line-height: 20px;
 }
 
-.title_size_small {
-  font-size: 15px;
-  line-height: 18px;
-  color: $gray;
-  font-weight: 400;
+.title--s_21 {
+  font-size: 21px;
+  line-height: 21px;
 }
 
-.title_size_medium_uppercase {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 500;
-  color: $blue;
-  text-transform: uppercase;
+.title--s_24 {
+  font-size: 24px;
+  line-height: 24px;
 }
+
+.title--c_orange {
+  color: $orange;
+}
+
+.title--c_blue {
+  color: $blue;
+}
+
+// Пробую практическое применение миксинов для часто повторяемых свойств
+.title--s_small {
+  @include subtitle;
+}
+
+.title--icon {
+  font-size: 24px;
+  line-height: 18px;
+  color: $blue;
+}
+
