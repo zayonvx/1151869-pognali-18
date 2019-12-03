@@ -1,0 +1,23 @@
+.info-list {
+  @include list-style;
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  color: $blue;
+}
+
+.info-list__item--bg_orange {
+  background-color: $orange;
+}
+
+.info-list__item--bg_orange-dark {
+  background-color: $orange-dark;
+}
+
+.info-list__item--bg_yellow-dark {
+  background-color: $yellow-dark;
+}
+
+.info-list__item--bg_yellow {
+  background-color: $yellow;
+}

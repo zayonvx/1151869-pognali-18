@@ -1,0 +1,11 @@
+@mixin list-style {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin subtitle {
+  font-size: 15px;
+  line-height: 18px;
+  color: $gray;
+  font-weight: 400;
+}

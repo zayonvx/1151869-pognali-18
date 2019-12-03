@@ -1,0 +1,21 @@
+.review {
+  background-color: $blue;
+}
+
+.review__quote {
+  margin: 0;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.review__author {
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}

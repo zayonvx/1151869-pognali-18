@@ -1,0 +1,19 @@
+.promo-header {
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-color: $blue;
+}
+
+.promo-header__title {
+  padding-top: 55px;
+}
+
+.promo-header__contacts-list {
+  margin: 0;
+  margin-top: 248px;
+}
+
+.promo-header__user-list {
+  margin: 0;
+}

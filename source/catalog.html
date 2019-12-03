@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>HTML Academy: Погнали - Направления</title>
+  <title>HTML Academy: Погнали - Попутчики</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a href="index.html" class="logo page-header__logo">
-      <img class="logo__img" src="#" alt="Логотип Погнали">
+      <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали">
     </a>
     <button class="button-toogle page-header__button-toogle" type="button" aria-label="Открыть меню навигации">
     </button>
@@ -17,56 +18,213 @@
       <nav class="page-nav">
         <ul class="site-list page-nav__site-list">
           <li class="site-list__item"><a href="index.html" class="site-list__link">О сервисе</a></li>
-          <li class="site-list__item"><a class="site-list__link">Направления</a></li>
-          <li class="site-list__item"><a href="form.html" class="site-list__link">Попутчики</a></li>
+          <li class="site-list__item"><a href="form.html" class="site-list__link">Направления</a></li>
+          <li class="site-list__item"><a class="site-list__link">Попутчики</a></li>
         </ul>
       </nav>
       <ul class="user-list page-header__user-list">
         <li class="user-list__item">
-          <a href="#" class="button user-list__button button_size_large">Авторизация</a>
+          <a href="#" class="button user-list__button">Авторизация</a>
         </li>
       </ul>
       <ul class="contacts-list page-header__contacts-list">
         <li class="contacts-list__item">
-          <a class="contacts-tel contacts-tel_bg_blue" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts-tel contacts-tel--bg_blue" href="tel:88005558628">8 800 555-86-28</a>
         </li>
         <li class="contacts-list__item">
-          <a class="contacts-mail contacts-mail_bg_blue" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts-mail contacts-mail--bg_blue" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
       <ul class="social-list page-header__social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Фейсбук"></a>
+          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали в Фейсбук</span></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Вконтакте"></a>
+          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали Вконтакте</span></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link"><img src="#" class="social-list__icon" alt="Погнали в Инстаграмме"></a>
+          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали в Инстаграмм</span></a>
         </li>
       </ul>
     </div>
   </header>
-  <main class="inner-page">
-    <h1 class="title inner-page__title title_color_white">Направления</h1>
-  </main>
-
-  <footer class="page-footer">
-      <h2 class="title page-footer__title title_color_blue">Погнали?</h2>
-      <ul class="social-list page-footer__social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="cсылка на фейсбук"></a>
+  <main class="page-inner">
+    <h1 class="title page-inner__title">Попутчики</h1>
+    <section class="filter-result">
+      <h2 class="visually-hidden">Список попутчиков</h2>
+      <ul class="filter-list filter-result__filter-list">
+        <li class="filter-list__item">
+          <h3 class="title filter-list__title title--c_blue title--s_20">Таня Фирсова</h3>
+          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">1,5 М</small>
+          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <img class="mates-image filter-list__mates-image" src="#" alt="Таня Фирсова - аватар">
+          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
+          <ul class="country-list filter-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Шри-ланка">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Шри Ланка</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Тайланд">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Тайланд</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Сейшелы">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Сейшелы</h5>
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
+          <ul class="transport-list filter-list__transport-list">
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Велосипед">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">25</span></h4>
+          <a href="#" class="button button__filter-list">Позвать!</a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на вконтакте"></a>
+        <li class="filter-list__item">
+          <h3 class="title filter-list__title title--c_blue title--s_20">Петя Демин</h3>
+          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">150</small>
+          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#бургер #бар #футбол #концерт #крафт</p>
+          <img class="mates-image filter-list__mates-image" src="#" alt="Петя Демин - аватар">
+          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
+          <ul class="country-list filter-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Бельгия">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Бельгия</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Чехия">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Чехия</h5>
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
+          <ul class="transport-list filter-list__transport-list">
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Велосипед">
+            </li>
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">80</span></h4>
+          <a href="#" class="button button__filter-list">Позвать!</a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на инстраграмм"></a>
+        <li class="filter-list__item">
+          <h3 class="title filter-list__title title--c_blue title--s_20">Марк Смолов</h3>
+          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">1700</small>
+          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#реп #тату #хайпбист #кроссовки #суприм</p>
+          <img class="mates-image filter-list__mates-image" src="#" alt="Марк Смолов">
+          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
+          <ul class="country-list filter-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="США">
+              <h5 class="title filter-list__title title--c_blue title--s_15">США</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Австралия">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Австралия</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Доминикана">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Доминикана</h5>
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
+          <ul class="transport-list filter-list__transport-list">
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Велосипед">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">25</span></h4>
+          <a href="#" class="button button__filter-list">Позвать!</a>
+        </li>
+        <li class="filter-list__item">
+          <h3 class="title filter-list__title title--c_blue title--s_20">Лариса Роговая</h3>
+          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">23</small>
+          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#образование #карьера #учеба #линкедин</p>
+          <img class="mates-image filter-list__mates-image" src="#" alt="Лариса Роговая">
+          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
+          <ul class="country-list filter-list__country-list">
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Великобритания">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Великобритания</h5>
+            </li>
+            <li class="country-list__item">
+              <img class="country-list__image" src="#" alt="Германия">
+              <h5 class="title filter-list__title title--c_blue title--s_15">Германия</h5>
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
+          <ul class="transport-list filter-list__transport-list">
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Самолёт">
+            </li>
+            <li class="transport-list__item transport-list__item_opacity_1">
+              <img class="transport-list__image" src="#" alt="Автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Велосипед">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__image" src="#" alt="Пешком">
+            </li>
+          </ul>
+          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">50</span></h4>
+          <a href="#" class="button button__filter-list">Позвать!</a>
         </li>
       </ul>
-      <a class="copyright-icon page-footer__copyright-icon" href="htpps://htmlacademy.ru">Разработано<span
-          class="visually-hidden"> в HTML Academy</span></a>
-    </footer>
+      <a href="#" class="button filter-result__button button_bg_transparent button_element_plus"></a>
+      <ul class="pagination-menu filter-result__pagination-menu">
+        <li class="pagination-menu__item">
+          <a href="#" class="pagination-menu__link" aria-label="предыдущая страница результатов фильтра попутчиков"></a>
+        </li>
+        <li class="pagination-menu__item">
+          <a href="#" class="pagination-menu__link" aria-label="следующая страница результатов фильтра попутчиков"></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <h2 class="title page-footer__title">Погнали?</h2>
+    <ul class="social-list page-footer__social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="cсылка на фейсбук"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на вконтакте"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на инстраграмм"></a>
+      </li>
+    </ul>
+    <a class="copyright-icon page-footer__copyright-icon" href="htpps://htmlacademy.ru">Разработано<span
+        class="visually-hidden"> в HTML Academy</span></a>
+  </footer>
+</body>
 
-    </body>
-    </html>
+</html>
