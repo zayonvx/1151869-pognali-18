@@ -9,3 +9,8 @@
   color: $gray;
   font-weight: 400;
 }
+
+@mixin container() {
+  padding-left: 25px;
+  padding-right: 25px;
+}

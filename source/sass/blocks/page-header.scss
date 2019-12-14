@@ -1,6 +1,9 @@
 .page-header {
   background: $blue;
   padding-top: 27px;
+  display: flex;
+  justify-content: space-between;
+  @include container();
 }
 
 .page-header__wrapper {

@@ -4,4 +4,17 @@
   font-size: 16px;
   line-height: 22px;
   color: $blue-darker;
+  display: flex;
+}
+
+.contacts-mail::before {
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: $yellow-dark;
+  border-radius: 100%;
+  background-image: url('/img/topmenu-mail.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }

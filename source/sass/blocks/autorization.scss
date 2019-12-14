@@ -1,0 +1,12 @@
+.autorization {
+  display: flex;
+  @include container();
+}
+
+.autorization__contacts-list {
+  margin: 0;
+}
+
+.autorization__user-list {
+  margin: 0;
+}

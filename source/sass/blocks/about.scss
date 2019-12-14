@@ -1,5 +1,8 @@
 .about {
   background-color: $blue;
+  &__wrapper {
+    @include container();
+  }
 }
 
 .about__review {
@@ -10,6 +13,22 @@
   margin-top: 35px;
   margin-bottom: 39px;
 }
+
+.about__header {
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-color: $blue;
+
+  // временно
+  min-height: 440px;
+}
+
+.about__title {
+  padding-top: 55px;
+  text-align: center;
+}
+
 
 .about__footer {
   background-image: url("../../img/about-mobile@1x.png");

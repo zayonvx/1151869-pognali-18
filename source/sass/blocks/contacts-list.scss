@@ -1,3 +1,4 @@
 .contacts-list {
   @include list-style;
+  display: flex;
 }
