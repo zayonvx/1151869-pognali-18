@@ -1,4 +1,5 @@
 .price {
+  @include container();
   background-color: $white-blue;
   padding-top: 53px;
   padding-bottom: 40px;
@@ -6,4 +7,13 @@
 
 .price__title {
   margin-bottom: 45px;
+  padding-left: 25px;
+}
+
+.price__price-list {
+  padding-left: 25px;
+}
+
+.price__button {
+  padding-left: 25px;
 }
