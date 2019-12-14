@@ -1,4 +1,6 @@
 @import "main";
+@import "blocks/title.scss";
+@import "blocks/text.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-nav.scss";
 @import "blocks/site-list.scss";
@@ -8,13 +10,12 @@
 @import "blocks/button.scss";
 @import "blocks/contacts-tel.scss";
 @import "blocks/contacts-mail.scss";
+@import "blocks/promo.scss";
 @import "blocks/about.scss";
 @import "blocks/promo-header.scss";
 @import "blocks/autorization.scss";
-@import "blocks/title.scss";
 @import "blocks/review.scss";
 @import "blocks/info-list.scss";
-@import "blocks/text.scss";
 @import "blocks/directions.scss";
 @import "blocks/directions-list.scss";
 @import "blocks/mates.scss";

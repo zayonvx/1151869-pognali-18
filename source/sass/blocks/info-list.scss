@@ -1,9 +1,12 @@
 .info-list {
-  @include list-style;
   margin: 0;
   font-style: normal;
   font-weight: 800;
   color: $blue;
+}
+
+.info-list__item {
+  padding: 25px;
 }
 
 .info-list__item--bg_orange {

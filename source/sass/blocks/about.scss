@@ -1,51 +1,21 @@
 .about {
-  background-color: $blue;
-  &__wrapper {
-    @include container();
-  }
-}
-
-.about__review {
-  margin-top: 30px;
-}
-
-.about .about__info-list {
-  margin-top: 35px;
-  margin-bottom: 39px;
-}
-
-.about__header {
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position-y: 100%;
-  background-color: $blue;
-
-  // временно
-  min-height: 440px;
-}
-
-.about__title {
-  padding-top: 55px;
-  text-align: center;
-}
-
-
-.about__footer {
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: $blue;
   padding-top: 33px;
   padding-bottom: 87px;
-}
-
-.about__footer .about__text {
-  margin-bottom: 26px;
-
-  &:nth-last-child() {
+  padding-left: 50px;
+  padding-right: 55px;
+  &:nth-last-child(){
     margin-bottom: 0;
   }
 }
 
-.about__footer .about__title {
-  margin-bottom: 26px;
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__text {
+  margin-bottom: 30px;
 }
