@@ -1,21 +1,26 @@
-@mixin list-style {
-  padding: 0;
-  list-style: none;
-}
-
-@mixin subtitle {
-  font-size: 15px;
-  line-height: 18px;
-  color: $gray;
-  font-weight: 400;
-}
-
-@mixin container() {
+@mixin container(){
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
 }
 
-@mixin text-container() {
-  padding-left: 50px;
-  padding-right: 50px;
+@mixin text-style {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

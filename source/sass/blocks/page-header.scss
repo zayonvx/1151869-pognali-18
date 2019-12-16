@@ -1,21 +1,106 @@
 .page-header {
-  background: $blue;
-  padding-top: 27px;
-  display: flex;
-  justify-content: space-between;
-  @include container();
+  color: $white;
+  background-color: $blue;
 }
 
 .page-header__wrapper {
-  background: $white;
-  padding-top: 77px;
+  @include container();
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 100px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    padding-top: 50px;
+  }
 }
 
-.page-header__user-list {
-  margin-bottom: 51px;
+.page-header__navigation {
+  width: 100%;
 }
 
-.page-header__contacts-list {
-  margin-bottom: 42px;
+.page-header__title {
+  @include text-style;
+  display: block;
+  align-self: center;
+  margin-top: 55px;
+  margin-bottom: 220px;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 85px;
+    margin-bottom: 100px;
+    width: 420px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 120px;
+    margin-bottom: 110px;
+    width: 30%;
+    text-align: left;
+    margin-left: 70px;
+  }
+}
+
+.page-header__navigation-misc {
+  margin-bottom: 30px;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__review {
+  width: 50%;
+  margin-left: 25px;
+
+  @media (min-width: $tablet) {
+    width: 40%;
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 120px;
+    width: 20%;
+    margin-left: 0;
+  }
+}
+
+.page-header__roadmap-list {
+  width: 100%;
+}
+
+.page-header__navigation-misc {
+  display: flex;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__roadmap-list {
+  margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    margin-top: 210px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 110px;
+  }
 }

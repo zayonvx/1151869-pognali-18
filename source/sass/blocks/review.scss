@@ -1,23 +1,30 @@
 .review {
-  background-color: $blue;
-  padding-left: 50px;
+  @include text-style;
 }
 
-.review__quote {
-  margin: 0;
-  font-style: normal;
-  font-weight: 200;
+.review__text {
+  @include text-style;
   font-size: 16px;
   line-height: 22px;
-  color: $white;
+  font-weight: 300;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 50px;
+  }
 }
 
 .review__author {
-  margin: 0;
-  font-style: normal;
-  font-weight: 800;
+  @include text-style;
   font-size: 16px;
   line-height: 22px;
-  color: $white;
+  font-weight: 800;
+  font-style: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

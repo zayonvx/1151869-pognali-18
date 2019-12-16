@@ -2,3 +2,35 @@
   @include list-style;
   display: flex;
 }
+
+.contacts-list__link {
+  display: flex;
+}
+
+.contacts-list__link--i_tel::before {
+  content: "";
+  background-color: $orange;
+  background-image: url("/img/topmenu-phone.svg");
+  background-position: center;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding-right: 40px;
+}
+
+.contacts-list__link--i_mail::before {
+  content: "";
+  background-color: $yellow;
+  background-image: url("/img/topmenu-mail.svg");
+  background-position: center;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding-right: 40px;
+  margin-right: 40p
+}
+
