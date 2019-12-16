@@ -1,0 +1,15 @@
+.country-list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-list__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+

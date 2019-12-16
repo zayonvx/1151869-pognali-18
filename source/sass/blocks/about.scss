@@ -47,7 +47,6 @@
 }
 
 .about__subtitle {
-  width: 50%;
   font-weight: 800;
   padding-left: 25px;
   font-size: 16px;
@@ -55,6 +54,7 @@
   color: $white;
 
   @media (min-width: $tablet) {
+    width: 50%;
     padding-left: 35px;
     font-size: 21px;
     line-height: 25px;
