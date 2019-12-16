@@ -11,6 +11,10 @@
   @media (min-width: $tablet) {
     padding-top: 45px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 165px;
+  }
 }
 
 .about__title {
@@ -26,6 +30,11 @@
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+    margin-bottom: 60px;
   }
 }
 
@@ -44,6 +53,11 @@
     line-height: 33px;
     margin-bottom: 45px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+    margin-bottom: 50px;
+  }
 }
 
 .about__subtitle {
@@ -59,6 +73,10 @@
     font-size: 21px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+  }
 }
 
 .about__button {
@@ -69,5 +87,9 @@
     width: 45%;
     margin-left: 35px;
     margin-top: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 65px;
   }
 }
