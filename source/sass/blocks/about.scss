@@ -1,0 +1,40 @@
+.about {
+  background-color: $blue;
+}
+
+.about__wrapper {
+  @include container();
+
+  padding-top: 30px;
+  padding-bottom: 85px;
+}
+
+.about__title {
+  font-weight: 800;
+  padding-left: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $orange;
+  margin-bottom: 25px;
+}
+
+.about__text {
+  font-weight: 300;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  margin-bottom: 25px;
+}
+
+.about__subtitle {
+  font-weight: 800;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.about__button {
+  display: none;
+}

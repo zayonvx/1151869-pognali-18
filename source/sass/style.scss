@@ -1,8 +1,10 @@
 @import "main";
-@import "blocks/navigation.scss";
-@import "blocks/navigation-misc.scss";
-@import "blocks/contacts-list.scss";
 @import "blocks/button.scss";
+// page-header
+@import "blocks/navigation.scss";
+@import "blocks/contacts-list.scss";
 @import "blocks/review.scss";
 @import "blocks/roadmap.scss";
 @import "blocks/page-header.scss";
+// about
+@import "blocks/about.scss";
