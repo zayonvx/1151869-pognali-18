@@ -59,7 +59,9 @@
 }
 
 .page-header__navigation-misc {
+  display: flex;
   margin-bottom: 30px;
+
   @media (min-width: $tablet) {
     display: none;
   }
@@ -83,17 +85,6 @@
 
 .page-header__roadmap-list {
   width: 100%;
-}
-
-.page-header__navigation-misc {
-  display: flex;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.page-header__roadmap-list {
   margin-top: 35px;
 
   @media (min-width: $tablet) {

@@ -11,9 +11,10 @@
 .people-list__item {
   margin-bottom: 10px;
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 0;
     margin-right: 35px;
+
     &:last-child {
       margin-right: 0;
     }

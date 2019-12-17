@@ -10,9 +10,9 @@
 }
 
 .profile__title {
+  @include text-style;
   width: 40%;
   text-align: left;
-  @include text-style;
   color: $orange;
   padding-left: 25px;
   font-weight: 800;
