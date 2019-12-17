@@ -1,34 +1,40 @@
-.directions {
-  background-color: $white-blue;
+.mates {
+  background-color: $blue;
 }
 
-.directions__wrapper {
+.mates__wrapper {
   @include container();
 
-  padding-top: 60px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 110px;
   position: relative;
 
   @media (min-width: $tablet) {
-    padding-top: 77px;
-    padding-bottom: 200px;
+    padding-top: 143px;
+    padding-bottom: 249px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
-    flex-direction: row-reverse;
-    padding-top: 160px;
-    padding-bottom: 140px;
+    flex-direction: row;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
-.directions__text-wrapper {
+.mates__text-wrapper {
   @media (min-width: $tablet) {
-    width: 50%;
+    width: 60%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 40%;
   }
 }
 
-.directions__title {
+.mates__title {
   @include text-style;
   padding-left: 25px;
   font-weight: 800;
@@ -45,45 +51,65 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 0;
+    padding-left: 75px;
   }
 }
 
-.directions__text {
+.mates__text {
   @include text-style;
-  color: $gray;
+  color: $white;
   padding-left: 25px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet) {
     padding-left: 35px;
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 0;
-    padding-right: 165px;
+    padding-left: 75px;
   }
 }
 
-.directions__country-list {
+.mates__subtitle {
+  @include text-style;
+  color: $white;
+  padding-left: 25px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 75px;
+    margin-bottom: 90px;
+  }
+}
+
+.mates__people-list {
   width: 100%;
   margin-top: 65px;
 
   @media (min-width: $tablet) {
-    margin-top: 110px;
+    margin-top: 62px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 0px;
-    margin-left: 75px;
+    margin-top: 0;
   }
 }
 
-.directions__button {
+.mates__button {
   position: absolute;
   left: 25px;
   bottom: 30px;
@@ -96,10 +122,11 @@
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    margin-top: 100px;
-    left: auto;
-    bottom: auto;
-    right: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 75px;
   }
 }
+
