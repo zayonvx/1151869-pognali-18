@@ -1,0 +1,54 @@
+.profile {
+  background-color: $white-blue;
+}
+
+.profile__wrapper {
+  @include container();
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.profile__title {
+  width: 40%;
+  text-align: left;
+  @include text-style;
+  color: $orange;
+  padding-left: 25px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 75px;
+  }
+}
+
+.profile__button {
+  margin-top: 47px;
+  margin-left: 35px;
+
+  @media (min-width: $tablet) {
+    margin-top: 85px;
+  }
+}
+
+.profile__service-list {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 160px;
+  }
+}
