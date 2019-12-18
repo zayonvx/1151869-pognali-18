@@ -1,22 +1,18 @@
 @import "main";
+@import "blocks/button-toogle.scss";
 @import "blocks/button.scss";
-// page-header
+//header
 @import "blocks/navigation.scss";
-@import "blocks/contacts-list.scss";
-@import "blocks/review.scss";
-@import "blocks/roadmap.scss";
+@import "blocks/navigation-misc.scss";
 @import "blocks/page-header.scss";
-// about
+@import "blocks/road-map.scss";
+//about
 @import "blocks/about.scss";
-// directions
-@import "blocks/country-list.scss";
+//directions
 @import "blocks/directions.scss";
-// mates
-@import "blocks/people-card.scss";
-@import "blocks/people-list.scss";
+//mates
 @import "blocks/mates.scss";
-// profile
+//profile
 @import "blocks/profile.scss";
-@import "blocks/service-list.scss";
-//footer
+//page-footer
 @import "blocks/page-footer.scss";

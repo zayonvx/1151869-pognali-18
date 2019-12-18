@@ -1,131 +1,55 @@
 .mates {
   background-color: $blue;
+  position: relative;
 }
 
 .mates__wrapper {
   @include container();
-
-  padding-top: 70px;
-  padding-bottom: 110px;
-  position: relative;
-
-  @media (min-width: $tablet) {
-    padding-top: 143px;
-    padding-bottom: 249px;
-  }
-
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-    padding-top: 135px;
-    padding-bottom: 135px;
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
-.mates__text-wrapper {
-  @media (min-width: $tablet) {
-    width: 60%;
-  }
-
-  @media (min-width: $desktop) {
-    width: 40%;
-  }
+  padding-top: 73px;
+  padding-bottom: 112px;
 }
 
 .mates__title {
   @include text-style;
-  padding-left: 25px;
-  font-weight: 800;
+  color: $orange;
   font-size: 24px;
   line-height: 24px;
-  color: $orange;
-  margin-bottom: 23px;
-
-  @media (min-width: $tablet) {
-    padding-left: 35px;
-    font-size: 45px;
-    line-height: 45px;
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-left: 75px;
-  }
+  margin-bottom: 25px;
+  padding-left: 25px;
 }
 
 .mates__text {
   @include text-style;
-  color: $white;
-  padding-left: 25px;
-  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet) {
-    padding-left: 35px;
-    font-size: 28px;
-    line-height: 33px;
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-left: 75px;
-  }
+  margin-bottom: 27px;
+  padding-left: 25px;
+  color: $white;
+  font-weight: 300;
 }
 
 .mates__subtitle {
   @include text-style;
   color: $white;
   padding-left: 25px;
-  font-weight: 800;
   font-size: 16px;
   line-height: 22px;
-
-  @media (min-width: $tablet) {
-    padding-left: 35px;
-    font-size: 21px;
-    line-height: 25px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-left: 75px;
-    margin-bottom: 90px;
-  }
+  font-weight: 800;
 }
 
 .mates__people-list {
-  width: 100%;
-  margin-top: 65px;
+  @include list-style;
+  margin-top: 60px;
+}
 
-  @media (min-width: $tablet) {
-    margin-top: 62px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 0;
-  }
+.mates__item {
+  margin-bottom: 10px;
+  background-color: $white;
 }
 
 .mates__button {
   position: absolute;
   left: 25px;
-  bottom: 30px;
   right: 25px;
-
-  @media (min-width: $tablet) {
-    left: 35px;
-    bottom: 80px;
-    right: 35px;
-  }
-
-  @media (min-width: $desktop) {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin-left: 75px;
-  }
+  bottom: 30px;
 }
