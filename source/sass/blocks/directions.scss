@@ -5,8 +5,27 @@
 
 .directions__wrapper {
   @include container();
-  padding-top: 73px;
-  padding-bottom: 117px;
+
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  @media (min-width: $tablet) {
+    padding-top: 77px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 160px;
+    padding-bottom: 140px;
+  }
+}
+
+.directions__text-wrapper {
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .directions__title {
@@ -16,6 +35,17 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+  }
 }
 
 .directions__text {
@@ -25,6 +55,16 @@
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+  }
 }
 
 .directions__button {
@@ -32,14 +72,39 @@
   bottom: 30px;
   left: 25px;
   right: 25px;
+
+  @media (min-width: $tablet) {
+    left: 35px;
+    bottom: 80px;
+    right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 100px;
+    left: auto;
+    bottom: auto;
+    right: auto;
+  }
 }
 
 .directions__country-list {
   @include list-style;
-  margin-top: 67px;
+  margin-top: 65px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    margin-top: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 75px;
+    margin-right: 175px;
+  }
 }
 
 .directions__item {
   background-color: $white;
   margin-bottom: 10px;
+  width: 100%;
 }

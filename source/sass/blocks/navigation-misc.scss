@@ -2,6 +2,10 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .navigation-misc__contacts-list {

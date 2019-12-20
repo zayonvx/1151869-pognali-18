@@ -1,11 +1,17 @@
 .button {
   background-color: $yellow;
-  padding: 15px 35px;
+  padding: 5px 40px;
   color: $blue;
   font-weight: 800;
   line-height: 0;
   font-size: 17px;
   line-height: 10px;
+  border-radius: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .button--transparent {

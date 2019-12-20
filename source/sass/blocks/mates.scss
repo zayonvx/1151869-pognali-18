@@ -5,8 +5,32 @@
 
 .mates__wrapper {
   @include container();
-  padding-top: 73px;
-  padding-bottom: 112px;
+  padding-top: 70px;
+  padding-bottom: 110px;
+
+  @media (min-width: $tablet) {
+    padding-top: 145px;
+    padding-bottom: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.mates__text-wrapper {
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 40%;
+  }
 }
 
 .mates__title {
@@ -16,6 +40,17 @@
   line-height: 24px;
   margin-bottom: 25px;
   padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 75px;
+  }
 }
 
 .mates__text {
@@ -26,7 +61,20 @@
   padding-left: 25px;
   color: $white;
   font-weight: 300;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 75px;
+  }
 }
+
+
 
 .mates__subtitle {
   @include text-style;
@@ -35,16 +83,48 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 800;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 75px;
+    margin-bottom: 90px;
+  }
 }
 
 .mates__people-list {
   @include list-style;
-  margin-top: 60px;
+  margin-top: 65px;
+
+  @media (min-width: $tablet) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .mates__item {
   margin-bottom: 10px;
   background-color: $white;
+  min-width: 265px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .mates__button {
@@ -52,4 +132,17 @@
   left: 25px;
   right: 25px;
   bottom: 30px;
+
+  @media (min-width: $tablet) {
+    left: 35px;
+    bottom: 80px;
+    right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin-left: 75px;
+  }
 }

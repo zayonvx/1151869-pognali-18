@@ -1,6 +1,14 @@
+.road-map {
+  width: 100%;
+}
 .road-map__road-map-list {
   @include list-style;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .road-map__item {
@@ -11,6 +19,14 @@
   font-weight: 800;
   background-color: $orange;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 25%;
+  }
 
   &:nth-child(2) {
     background-color: $orange-light;

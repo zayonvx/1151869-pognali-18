@@ -10,6 +10,11 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 
@@ -24,6 +29,11 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    justify-content: unset;
+  }
 }
 
 .page-footer__text {
