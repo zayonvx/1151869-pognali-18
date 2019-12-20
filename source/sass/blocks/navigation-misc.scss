@@ -20,7 +20,7 @@
 .navigation-misc__contacts-link--tel::before {
   content: "";
   background-color: $orange;
-  background-image: url(/img/topmenu-phone.svg);
+  background-image: url("/img/topmenu-phone.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px 18px;
@@ -33,7 +33,7 @@
 .navigation-misc__contacts-link--mail::before {
   content: "";
   background-color: $yellow;
-  background-image: url(/img/topmenu-mail.svg);
+  background-image: url("/img/topmenu-mail.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px 18px;

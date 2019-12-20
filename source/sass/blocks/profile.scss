@@ -29,11 +29,6 @@
   }
 }
 
-.profile__services {
-  margin-top: 45px;
-  background-color: $white;
-}
-
 .profile__button {
   margin-top: 74px;
   margin-left: 35px;
@@ -44,7 +39,8 @@
 }
 
 .profile__services {
-  margin-top: 60px;
+  background-color: $white;
+  margin-top: 45px;
 
   @media (min-width: $tablet) {
     margin-top: 100px;
