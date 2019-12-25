@@ -1,5 +1,45 @@
 .page-footer {
   background-color: $white;
-  padding-top: 38px;
+}
+
+.page-footer__wrapper {
+  @include container();
   padding-bottom: 14px;
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.page-footer__social-list {
+  @include list-style;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.page-footer__creator {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    justify-content: unset;
+  }
+}
+
+.page-footer__text {
+  @include text-style;
+  font-size: 16px;
+  line-height: 22px;
+  color: $gray;
+  font-weight: 300;
 }

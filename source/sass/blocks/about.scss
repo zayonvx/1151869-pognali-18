@@ -2,31 +2,93 @@
   background-color: $blue;
 }
 
-.about__review {
-  margin-top: 30px;
-}
+.about__wrapper {
+  @include container();
+  padding-top: 35px;
+  padding-bottom: 85px;
 
-.about .about__info-list {
-  margin-top: 35px;
-  margin-bottom: 39px;
-}
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
 
-.about__footer {
-  background-image: url("../../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-color: $blue;
-  padding-top: 33px;
-  padding-bottom: 87px;
-}
-
-.about__footer .about__text {
-  margin-bottom: 26px;
-
-  &:nth-last-child() {
-    margin-bottom: 0;
+  @media (min-width: $desktop) {
+    padding-bottom: 165px;
   }
 }
 
-.about__footer .about__title {
-  margin-bottom: 26px;
+.about__title {
+  @include text-style;
+  color: $orange;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 45px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+    margin-bottom: 60px;
+  }
+}
+
+.about__text {
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 35px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+    margin-bottom: 50px;
+  }
+}
+
+.about__subtitle {
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+  font-weight: 800;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    padding-left: 35px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 65px;
+  }
+}
+
+.about__button {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 45%;
+    margin-left: 35px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 65px;
+  }
 }

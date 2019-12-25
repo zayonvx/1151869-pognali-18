@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation__menu-list {
+  display: none;
+}
+
+.navigation__button {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.navigation__address-info {
+  display: none;
+}

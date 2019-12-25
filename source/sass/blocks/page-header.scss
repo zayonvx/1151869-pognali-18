@@ -1,18 +1,107 @@
 .page-header {
-  background: $blue;
-  padding-top: 27px;
+  background-color: $blue;
+  color: $white;
 }
 
 .page-header__wrapper {
-  background: $white;
-  padding-top: 77px;
-  padding-bottom: 40px;
+  @include container();
+  padding-top: 27px;
+  padding-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 95px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 123px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
-.page-header__user-list {
-  margin-bottom: 51px;
+.page-header__title {
+  @include text-style;
+  align-self: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 55px;
+  margin-bottom: 258px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 70px;
+    width: 60%;
+    margin-bottom: 95px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 30%;
+    text-align: left;
+    margin-top: 113px;
+    padding-left: 65px;
+  }
 }
 
-.page-header__contacts-list {
-  margin-bottom: 42px;
+.page-header__blockquote {
+  @include text-style;
+  margin-top: 30px;
+  margin-left: 25px;
+
+  @media (min-width: $tablet) {
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: auto;
+    align-self: flex-end;
+    margin-right: 30px;
+  }
+}
+
+.page-header__review {
+  @include text-style;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 55px;
+  }
+}
+
+.page-header__review-author {
+  @include text-style;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.page-header__road-map {
+  margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    margin-top: 215px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 108px;
+  }
 }

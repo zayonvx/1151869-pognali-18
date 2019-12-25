@@ -3,227 +3,404 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали - Попутчики</title>
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-  <header class="page-header">
-    <a href="index.html" class="logo page-header__logo">
-      <img class="logo__img" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали">
-    </a>
-    <button class="button-toogle page-header__button-toogle" type="button" aria-label="Открыть меню навигации">
-    </button>
+<body class="page-inner">
+  <header class="page-header page-inner__page-header">
     <div class="page-header__wrapper">
-      <nav class="page-nav">
-        <ul class="site-list page-nav__site-list">
-          <li class="site-list__item"><a href="index.html" class="site-list__link">О сервисе</a></li>
-          <li class="site-list__item"><a href="form.html" class="site-list__link">Направления</a></li>
-          <li class="site-list__item"><a class="site-list__link">Попутчики</a></li>
+      <nav class="navigation page-header__navigation">
+        <a class="navigation__logo">
+          <img src="img/logo" alt="Логотип Погнали">
+        </a>
+        <button class="button-toogle navigation__button-toogle" type="button" aria-label="Погнали Меню"></button>
+        <ul class="navigation__menu-list">
+          <li class="navigation__site-menu-item">
+            <a href="#" class="navigation__site-menu-link">О сервисе</a>
+          </li>
+          <li class="navigation__site-menu-item">
+            <a href="#" class="navigation__site-menu-link">Направления</a>
+          </li>
+          <li class="navigation__site-menu-item">
+            <a href="#" class="navigation__site-menu-link">Попутчики</a>
+          </li>
         </ul>
+        <a href="#" class="button navigation__button">Авторизация</a>
+        <address class="navigation__address-info">
+          <ul class="navigation__contacts-list">
+            <li class="navigation__сontacts-item">
+              <a class="navigation__сontacts-link" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="navigation__сontacts-item">
+              <a class="navigation__сontacts-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+        </address>
       </nav>
-      <ul class="user-list page-header__user-list">
-        <li class="user-list__item">
-          <a href="#" class="button user-list__button">Авторизация</a>
-        </li>
-      </ul>
-      <ul class="contacts-list page-header__contacts-list">
-        <li class="contacts-list__item">
-          <a class="contacts-tel contacts-tel--bg_blue" href="tel:88005558628">8 800 555-86-28</a>
-        </li>
-        <li class="contacts-list__item">
-          <a class="contacts-mail contacts-mail--bg_blue" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-      <ul class="social-list page-header__social-list">
-        <li class="social-list__item">
-          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали в Фейсбук</span></a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали Вконтакте</span></a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="social-list__link"><span class="visually-hidden">Погнали в Инстаграмм</span></a>
-        </li>
-      </ul>
+      <h1 class="page-header__title">Попутчики</h1>
+      <a href="index.html" class="page-header__link">На главную</a>
     </div>
   </header>
-  <main class="page-inner">
-    <h1 class="title page-inner__title">Попутчики</h1>
-    <section class="filter-result">
-      <h2 class="visually-hidden">Список попутчиков</h2>
-      <ul class="filter-list filter-result__filter-list">
-        <li class="filter-list__item">
-          <h3 class="title filter-list__title title--c_blue title--s_20">Таня Фирсова</h3>
-          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">1,5 М</small>
-          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <img class="mates-image filter-list__mates-image" src="#" alt="Таня Фирсова - аватар">
-          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
-          <ul class="country-list filter-list__country-list">
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Шри-ланка">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Шри Ланка</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Тайланд">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Тайланд</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Сейшелы">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Сейшелы</h5>
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
-          <ul class="transport-list filter-list__transport-list">
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Самолёт">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Автобус">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Велосипед">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Пешком">
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">25</span></h4>
-          <a href="#" class="button button__filter-list">Позвать!</a>
+  <main class="page-catalog">
+    <section class="page-catalog__traveler">
+      <h2 class="page-catalog__title">Список попутчиков</h2>
+      <ul class="page-catalog__traveler-list">
+        <li class="page-catalog__traveler-item">
+          <article class="traveler-card page-catalog__traveler-card">
+            <div class="photo traveler-card__photo">
+              <img src="photo" alt="Таня Фирсова" class="photo__image">
+            </div>
+            <h3 class="traveler-card__title">Таня Фирсова</h3>
+            <button class="like like--active" type="button">
+              <span class="like__text">Лайк</span>
+            </button>
+            <div class="like-number">1.5
+              <span class="like-number-text">М</span>
+            </div>
+            <div class="tags traveler-card__tags">
+              <h4 class="tags__title">теги</h4>
+              <ul class="tags__tags-list">
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    ЗОЖ
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    ПП
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    Фитнес
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    пляж
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    авокадо
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    смузи
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries traveler-card__countries">
+              <h4 class="countries__title">хочет посетить</h4>
+              <ul class="countries__countries-list">
+                <li class="countries__item">
+                  <div class="flag flag__countries">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Шри-Ланки">
+                    </div>
+                    <h5 class="flag__title">Шри-Ланка</h5>
+                  </div>
+                </li>
+                <li class="countries__item">
+                  <div class="flag flag__countries">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Тайланда">
+                    </div>
+                    <h5 class="flag__title">Тайланд</h5>
+                  </div>
+                </li>
+                <li class="countries__item">
+                  <div class="flag flag__countries">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Сейшелов">
+                    </div>
+                    <h5 class="flag__title">Сейшелы</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="transports traveler-card__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__transports-list">
+                <li class="transports__item">
+                  <div class="transport-card transport-card--plane transport-card--active">
+                    <span class="visually-hidden" aria-label="Самолет"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--car">
+                    <span class="visually-hidden" aria-label="Авто"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--bike">
+                    <span class="visually-hidden" aria-label="Велосипед"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--walk">
+                    <span class="visually-hidden" aria-label="Пешком"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <span class="level traveler-card__level">левел:
+              <span class="level__number">99</span>
+            </span>
+            <a href="#" class="button traveler-card__button">Позвать!</a>
+          </article>
         </li>
-        <li class="filter-list__item">
-          <h3 class="title filter-list__title title--c_blue title--s_20">Петя Демин</h3>
-          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">150</small>
-          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#бургер #бар #футбол #концерт #крафт</p>
-          <img class="mates-image filter-list__mates-image" src="#" alt="Петя Демин - аватар">
-          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
-          <ul class="country-list filter-list__country-list">
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Бельгия">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Бельгия</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Чехия">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Чехия</h5>
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
-          <ul class="transport-list filter-list__transport-list">
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Самолёт">
-            </li>
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Автобус">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Велосипед">
-            </li>
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Пешком">
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">80</span></h4>
-          <a href="#" class="button button__filter-list">Позвать!</a>
+        <li class="page-catalog__traveler-item">
+          <article class="traveler-card page-catalog__traveler-card">
+            <div class="photo traveler-card__photo">
+              <img src="photo" alt="Петя Демин" class="photo__image">
+            </div>
+            <h3 class="traveler-card__title">Петя Демин</h3>
+            <button class="like like--active" type="button">
+              <span class="like__text">Лайк</span>
+            </button>
+            <div class="like-number">150
+            </div>
+            <div class="tags traveler-card__tags">
+              <h4 class="tags__title">теги</h4>
+              <ul class="tags__tags-list">
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    Бургер
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    бар
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    футбол
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    концерт
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    крафт
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries traveler-card__countries">
+              <h4 class="countries__title">хочет посетить</h4>
+              <ul class="countries__countries-list">
+                <li class="countries__item">
+                  <div class="flag">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Бельгии">
+                    </div>
+                    <h5 class="flag__title">Бельгия</h5>
+                  </div>
+                </li>
+                <li class="countries__item">
+                  <div class="flag">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Чехии">
+                    </div>
+                    <h5 class="flag__title">Чехия</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="transports traveler-card__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__transports-list">
+                <li class="transports__item">
+                  <div class="transport-card transport-card--plane transport-card--active">
+                    <span class="visually-hidden" aria-label="Самолет"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--car transport-card--active">
+                    <span class="visually-hidden" aria-label="Авто"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--bike">
+                    <span class="visually-hidden" aria-label="Велосипед"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--walk transport-card--active">
+                    <span class="visually-hidden" aria-label="Пешком"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <span class="level traveler-card__level">левел:
+              <span class="level__number">80</span>
+            </span>
+            <a href="#" class="button traveler-card__button">Позвать!</a>
+          </article>
         </li>
-        <li class="filter-list__item">
-          <h3 class="title filter-list__title title--c_blue title--s_20">Марк Смолов</h3>
-          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">1700</small>
-          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#реп #тату #хайпбист #кроссовки #суприм</p>
-          <img class="mates-image filter-list__mates-image" src="#" alt="Марк Смолов">
-          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
-          <ul class="country-list filter-list__country-list">
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="США">
-              <h5 class="title filter-list__title title--c_blue title--s_15">США</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Австралия">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Австралия</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Доминикана">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Доминикана</h5>
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
-          <ul class="transport-list filter-list__transport-list">
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Самолёт">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Автобус">
-            </li>
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Велосипед">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Пешком">
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">25</span></h4>
-          <a href="#" class="button button__filter-list">Позвать!</a>
-        </li>
-        <li class="filter-list__item">
-          <h3 class="title filter-list__title title--c_blue title--s_20">Лариса Роговая</h3>
-          <small class="text text--weight_bold text--c_blue text--s_14 text--lh_21">23</small>
-          <p class="text filter-list__text text--c_gray text--s_15 text--lh_18">#образование #карьера #учеба #линкедин</p>
-          <img class="mates-image filter-list__mates-image" src="#" alt="Лариса Роговая">
-          <h4 class="title filter-list__title title--s_small">хочет посетить:</h4>
-          <ul class="country-list filter-list__country-list">
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Великобритания">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Великобритания</h5>
-            </li>
-            <li class="country-list__item">
-              <img class="country-list__image" src="#" alt="Германия">
-              <h5 class="title filter-list__title title--c_blue title--s_15">Германия</h5>
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">транспорт:</h4>
-          <ul class="transport-list filter-list__transport-list">
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Самолёт">
-            </li>
-            <li class="transport-list__item transport-list__item_opacity_1">
-              <img class="transport-list__image" src="#" alt="Автобус">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Велосипед">
-            </li>
-            <li class="transport-list__item">
-              <img class="transport-list__image" src="#" alt="Пешком">
-            </li>
-          </ul>
-          <h4 class="title filter-list__title title--s_small">левел:<span class="title title--icon">50</span></h4>
-          <a href="#" class="button button__filter-list">Позвать!</a>
+        <li class="page-catalog__traveler-item">
+          <article class="traveler-card page-catalog__traveler-card">
+            <div class="photo traveler-card__photo">
+              <img src="photo" alt="Марк Смолов" class="photo__image">
+            </div>
+            <h3 class="traveler-card__title">Марк Смолов</h3>
+            <button class="like like--active" type="button">
+              <span class="like__text">Лайк</span>
+            </button>
+            <div class="like-number">1700
+            </div>
+            <div class="tags traveler-card__tags">
+              <h4 class="tags__title">теги</h4>
+              <ul class="tags__tags-list">
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    рэп
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    тату
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    хайпбист
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    кроссовки
+                  </a>
+                </li>
+                <li class="tags__tags-item">
+                  <a href="" class="tags__tags-link">
+                    <span aria-label="тег">#</span>
+                    суприм
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="countries traveler-card__countries">
+              <h4 class="countries__title">хочет посетить</h4>
+              <ul class="countries__countries-list">
+                <li class="countries__item">
+                  <div class="flag">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг США">
+                    </div>
+                    <h5 class="flag__title">США</h5>
+                  </div>
+                </li>
+                <li class="countries__item">
+                  <div class="flag">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Австралии">
+                    </div>
+                    <h5 class="flag__title">Австралия</h5>
+                  </div>
+                </li>
+                <li class="countries__item">
+                  <div class="flag">
+                    <div class="flag__image-wrapper">
+                      <img class="flag__image" src="#" alt="Флаг Доминиканы">
+                    </div>
+                    <h5 class="flag__title">Доминикана</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="transports traveler-card__transports">
+              <h4 class="transports__title">транспорт</h4>
+              <ul class="transports__transports-list">
+                <li class="transports__item">
+                  <div class="transport-card transport-card--plane transport-card--active">
+                    <span class="visually-hidden" aria-label="Самолет"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--car">
+                    <span class="visually-hidden" aria-label="Авто"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--bike transport-card--active">
+                    <span class="visually-hidden" aria-label="Велосипед"></span>
+                  </div>
+                </li>
+                <li class="transports__item">
+                  <div class="transport-card transport-card--walk">
+                    <span class="visually-hidden" aria-label="Пешком"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <span class="level traveler-card__level">левел:
+              <span class="level__number">25</span>
+            </span>
+            <a href="#" class="button traveler-card__button">Позвать!</a>
+          </article>
         </li>
       </ul>
-      <a href="#" class="button filter-result__button button_bg_transparent button_element_plus"></a>
-      <ul class="pagination-menu filter-result__pagination-menu">
-        <li class="pagination-menu__item">
-          <a href="#" class="pagination-menu__link" aria-label="предыдущая страница результатов фильтра попутчиков"></a>
+      <a class="button page-catalog__button">Показать еще</a>
+      <ul class="pagination page-catalog__pagination">
+        <li class="pagination-step">
+          <span class="visually-hidden">Предыдущая страница</span>
         </li>
-        <li class="pagination-menu__item">
-          <a href="#" class="pagination-menu__link" aria-label="следующая страница результатов фильтра попутчиков"></a>
+        <li class="pagination-step">
+          <span class="visually-hidden">Cледующая страница</span>
         </li>
       </ul>
     </section>
   </main>
   <footer class="page-footer">
-    <h2 class="title page-footer__title">Погнали?</h2>
-    <ul class="social-list page-footer__social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="cсылка на фейсбук"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на вконтакте"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#"><img class="social-list-icon" src="#" alt="ссылка на инстраграмм"></a>
-      </li>
-    </ul>
-    <a class="copyright-icon page-footer__copyright-icon" href="htpps://htmlacademy.ru">Разработано<span
-        class="visually-hidden"> в HTML Academy</span></a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img src="logo" alt="Логотип Погнали">
+      </a>
+      <address class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link">Facebook</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link">Вконтакте</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link">Instagram</a>
+          </li>
+        </ul>
+      </address>
+      <div class="page-footer__creator">
+        <span class="page-footer__text">Разработано</span>
+        <a class="page-footer__creator-logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#"
+            alt="Лого Академии"></a>
+      </div>
+    </div>
   </footer>
 </body>
 

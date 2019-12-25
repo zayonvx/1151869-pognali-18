@@ -1,28 +1,21 @@
 @import "main";
-@import "blocks/page-header.scss";
-@import "blocks/page-nav.scss";
-@import "blocks/site-list.scss";
-@import "blocks/social-list.scss";
-@import "blocks/contacts-list.scss";
-@import "blocks/user-list.scss";
 @import "blocks/button.scss";
-@import "blocks/contacts-tel.scss";
-@import "blocks/contacts-mail.scss";
+//header
+@import "blocks/navigation.scss";
+@import "blocks/navigation-misc.scss";
+@import "blocks/page-header.scss";
+@import "blocks/road-map.scss";
+//about
 @import "blocks/about.scss";
-@import "blocks/promo-header.scss";
-@import "blocks/title.scss";
-@import "blocks/review.scss";
-@import "blocks/info-list.scss";
-@import "blocks/text.scss";
+//directions
 @import "blocks/directions.scss";
-@import "blocks/directions-list.scss";
+//mates
+@import "blocks/countries.scss";
+@import "blocks/flag.scss";
+@import "blocks/transports.scss";
+@import "blocks/tags.scss";
 @import "blocks/mates.scss";
-@import "blocks/mates-list.scss";
-@import "blocks/price.scss";
-@import "blocks/price-list.scss";
-@import "blocks/page-inner.scss";
-@import "blocks/filter-result.scss";
-@import "blocks/filter-list.scss";
-@import "blocks/country-list.scss";
-@import "blocks/transport-list.scss";
-@import "blocks/pagination-menu.scss";
+//profile
+@import "blocks/profile.scss";
+//page-footer
+@import "blocks/page-footer.scss";
