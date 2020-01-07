@@ -1,23 +1,60 @@
 .button {
-  background-color: $yellow;
-  padding: 5px 40px;
-  color: $blue;
+  position: relative;
+
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 10px;
-  border-radius: 40px;
+  color: $blue;
+  text-transform: none;
+  background-color: $yellow;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 
-  @media (min-width: $tablet) {
-    font-size: 24px;
-    line-height: 24px;
+  &--border {
+    border: 3px solid $blue;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 21px;
+
+    &::after {
+      top: 22px;
+      right: 20px;
+    }
   }
-}
 
-.button--transparent {
-  padding: 0;
-  padding-left: 25px;
-  font-size: 16px;
-  line-height: 16px;
-  background: transparent;
-  margin-top: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    width: 10px;
+    height: 14px;
+    background-image: url("../../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $yellow-dark;
+  }
+
+  &:active {
+    color: (29, 46, 91, 0.3);
+
+    background-color: $yellow-dark;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+    background-color: $orange;
+  }
+
 }
