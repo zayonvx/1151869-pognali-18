@@ -5,10 +5,12 @@
 
 .page-header__wrapper {
   @include container();
-  padding-top: 27px;
-  padding-bottom: 37px;
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -160px;
 
   @media (min-width: $tablet) {
     padding-top: 45px;
@@ -29,9 +31,9 @@
   font-weight: 800;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 258px;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-bottom: 244px;
+  padding-left: 7px;
+  min-height: 112px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
@@ -52,8 +54,7 @@
 
 .page-header__blockquote {
   @include text-style;
-  margin-top: 30px;
-  margin-left: 25px;
+  padding: 25px 50px 110px 25px;
 
   @media (min-width: $tablet) {
     margin-left: 35px;
@@ -70,7 +71,7 @@
 .page-header__review {
   @include text-style;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
 
@@ -95,7 +96,6 @@
 }
 
 .page-header__road-map {
-  margin-top: 35px;
 
   @media (min-width: $tablet) {
     margin-top: 215px;

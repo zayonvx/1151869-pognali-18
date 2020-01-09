@@ -1,10 +1,22 @@
 .road-map {
   width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 684px;
+  left: 0;
+}
+
+.road-map__wrapper {
+  @include container;
+  position: relative;
+  width: 100%;
 }
 
 .road-map__road-map-list {
   @include list-style;
-  width: 100%;
+  position: absolute;
+  left: 25px;
+  right: 25px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -13,13 +25,19 @@
 }
 
 .road-map__item {
+  position: relative;
   display: flex;
-  padding: 23px 25px;
+  justify-content: space-between;
+  min-height: 120px;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-left: 25px;
+  background-color: $orange;
+  border-radius: 8px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
-  background-color: $orange;
-  justify-content: space-between;
+  color: $blue-light;
 
   @media (min-width: $tablet) {
     width: 50%;
@@ -31,14 +49,18 @@
 
   &:nth-child(2) {
     background-color: $orange-light;
+    top:-40px;
   }
 
   &:nth-child(3) {
     background-color: $yellow-dark;
+    top: -80px;
   }
 
   &:nth-child(4) {
     background-color: $yellow;
+    top: -121px;
+    min-height: 80px;
   }
 }
 
@@ -50,4 +72,5 @@
 
 .road-map__number {
   color: $white;
+  margin-left: 60px;
 }

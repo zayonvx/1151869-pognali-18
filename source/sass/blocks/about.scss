@@ -1,11 +1,16 @@
 .about {
-  background-color: $blue;
+  background-color: $blue-light;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .about__wrapper {
   @include container();
-  padding-top: 35px;
-  padding-bottom: 85px;
+  padding-top: 268px;
+  padding-bottom: 65px;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: bottom 1px left 17px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
     padding-top: 45px;
@@ -21,7 +26,8 @@
   color: $orange;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-top: 41px;
+  margin-bottom: 23px;
   padding-left: 25px;
 
   @media (min-width: $tablet) {
@@ -41,7 +47,6 @@
   color: $white;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 25px;
   font-weight: 300;
   padding-left: 25px;
 
