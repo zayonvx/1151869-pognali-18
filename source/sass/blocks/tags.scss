@@ -1,4 +1,17 @@
 .tags__tags-list {
   @include list-style;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags__tags-link {
+  display: flex;
+  color: #444444;
+  font-weight: 16px;
+  line-height: 18px;
+}
+
+.tags__title {
+  display: none;
 }

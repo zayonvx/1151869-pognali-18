@@ -40,7 +40,7 @@
   color: $orange;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 25px;
 
   @media (min-width: $tablet) {
@@ -59,10 +59,11 @@
   @include text-style;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   padding-left: 25px;
   color: $white;
   font-weight: 300;
+  padding-right: 29px;
 
   @media (min-width: $tablet) {
     padding-left: 35px;
@@ -98,7 +99,7 @@
 
 .mates__people-list {
   @include list-style;
-  margin-top: 65px;
+  margin-top: 58px;
 
   @media (min-width: $tablet) {
     margin-top: 60px;
@@ -114,8 +115,6 @@
 
 .mates__item {
   margin-bottom: 10px;
-  background-color: $white;
-  min-width: 265px;
 
   @media (min-width: $desktop) {
     margin-bottom: 0;

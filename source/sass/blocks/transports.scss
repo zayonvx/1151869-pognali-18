@@ -1,3 +1,7 @@
 .transports__transports-list {
   @include list-style;
 }
+
+.transports__title {
+  display: none;
+}
