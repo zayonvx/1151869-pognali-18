@@ -1,13 +1,15 @@
 .directions {
   background-color: $white-blue;
   position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .directions__wrapper {
   @include container();
 
-  padding-top: 60px;
-  padding-bottom: 120px;
+  padding-top: 71px;
+  padding-bottom: 90px;
 
   @media (min-width: $tablet) {
     padding-top: 77px;
@@ -34,7 +36,7 @@
   padding-left: 25px;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet) {
     padding-left: 35px;
@@ -89,7 +91,7 @@
 
 .directions__country-list {
   @include list-style;
-  margin-top: 65px;
+  margin-top: 58px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -105,6 +107,9 @@
 
 .directions__item {
   background-color: $white;
-  margin-bottom: 10px;
   width: 100%;
+
+  &:not(:first-child) {
+    margin-top: -20px;
+  }
 }

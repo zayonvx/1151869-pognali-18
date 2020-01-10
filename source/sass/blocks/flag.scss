@@ -1,3 +1,10 @@
 .flag__flag-list {
   @include list-style;
 }
+
+.flag__image-wrapper {
+  width: 35px;
+  height: 23px;
+  background-color: #ccc;
+  border: 1px solid red;
+}
