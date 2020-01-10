@@ -1,11 +1,13 @@
 .mates {
   background-color: $blue;
   position: relative;
+  z-index: 1;
+  top: -25px;
 }
 
 .mates__wrapper {
   @include container();
-  padding-top: 70px;
+  padding-top: 95px;
   padding-bottom: 110px;
 
   @media (min-width: $tablet) {
