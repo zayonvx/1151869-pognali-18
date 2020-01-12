@@ -8,8 +8,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid rgba(68, 68, 68, 0.05);
   &:last-child {
     border-bottom: 1px solid rgba(68, 68, 68, 0.05);
@@ -26,4 +26,29 @@
 
 .services__price {
   @include text-style;
+}
+
+.services__number-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: -10px;
+
+  &--second {
+    background-color: $orange-light;
+  }
+
+  &--third {
+    background-color: $yellow;
+  }
+}
+
+.services__number {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 14px;
 }
