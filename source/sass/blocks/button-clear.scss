@@ -38,4 +38,13 @@
     background-position: top 15px left 84px;
     border: none;
   }
+
+  @media(min-width: $tablet){
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
 }

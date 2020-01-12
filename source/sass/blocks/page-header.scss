@@ -105,3 +105,9 @@
     margin-top: 108px;
   }
 }
+
+.page-header__navigation-misc {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

@@ -3,13 +3,14 @@
   position: relative;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  z-index: 2;
+  z-index: 4;
+  margin-top: -25px;
 }
 
 .directions__wrapper {
   @include container();
 
-  padding-top: 71px;
+  padding-top: 96px;
   padding-bottom: 90px;
 
   @media (min-width: $tablet) {

@@ -1,8 +1,22 @@
 .logo {
   display: block;
   line-height: 0;
+
+  @media(min-width: $tablet) {
+    .logo__image--tablet {
+      display: block;
+    }
+
+    .logo__image--white {
+      display: none;
+    }
+  }
 }
 
 .logo__image--blue {
+  display: none;
+}
+
+.logo__image--tablet {
   display: none;
 }
