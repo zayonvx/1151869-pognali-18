@@ -1,7 +1,15 @@
 .transports__transports-list {
   @include list-style;
+  display: flex;
 }
 
 .transports__title {
   display: none;
+}
+
+.transports__item {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
 }

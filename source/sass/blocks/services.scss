@@ -1,0 +1,29 @@
+.services__services-list {
+  @include list-style;
+  background-color: $white-blue;
+  padding-left: 25px;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(68, 68, 68, 0.05);
+  &:last-child {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.05);
+  }
+}
+
+.services__text-wrapper {
+  @include text-style;
+  color: $gray;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.services__price {
+  @include text-style;
+}

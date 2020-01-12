@@ -3,6 +3,8 @@
   position: relative;
   z-index: 1;
   top: -25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .mates__wrapper {
@@ -115,6 +117,10 @@
 
 .mates__item {
   margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop) {
     margin-bottom: 0;

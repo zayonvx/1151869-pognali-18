@@ -12,14 +12,13 @@
   width: 270px;
   height: 270px;
   background-color: #ccc;
-  border: 1px solid red;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .people-card__text-wrapper {
   background-color: #fff;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,20 +28,20 @@
 
 .people-card__title {
   @include text-style;
-  font-weight: 21px;
+  font-size: 21px;
   line-height: 21px;
   color: $blue-text;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .people-card__countries {
   order: -1;
-  margin-top: -10px;
+  margin-top: -12px;
   margin-bottom: 15px;
 }
 
 .people-card__tags {
-  padding-left: 46px;
-  padding-right: 46px;
+  margin-bottom: 16px;
 }
+
