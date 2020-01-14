@@ -13,8 +13,10 @@
   background-position: 0 -160px;
 
   @media (min-width: $tablet) {
-    padding-top: 45px;
-    padding-bottom: 95px;
+    padding-top: 72px;
+    padding-bottom: 350px;
+    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-position: bottom center;
   }
 
   @media (min-width: $desktop) {
@@ -39,8 +41,7 @@
     font-size: 60px;
     line-height: 70px;
     width: 60%;
-    margin-bottom: 95px;
-    padding-left: 35px;
+    margin-bottom: 87px;
   }
 
   @media (min-width: $desktop) {
@@ -54,10 +55,19 @@
 
 .page-header__blockquote {
   @include text-style;
-  padding: 25px 50px 110px 25px;
+  padding: 25px 0 110px 0;
+  width: 160px;
+  margin-left: 25px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
 
   @media (min-width: $tablet) {
     margin-left: 35px;
+    padding: 0;
+    font-size: 21px;
+    line-height: 25px;
+    width: 260px;
   }
 
   @media (min-width: $desktop) {
@@ -78,7 +88,8 @@
   @media (min-width: $tablet) {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 55px;
+    margin-bottom: 43px;
+    width: 260px;
   }
 }
 
@@ -88,10 +99,13 @@
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
+  width: 180px;
+  display: block;
 
   @media (min-width: $tablet) {
     font-size: 21px;
     line-height: 25px;
+    width: 250px;
   }
 }
 
