@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 200px;
+
+  @media (min-width: $tablet) {
+    width: 220px;
+  }
 }
 
 .tags__tags-item {
@@ -19,6 +23,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .tags__title {
