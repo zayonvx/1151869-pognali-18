@@ -5,6 +5,12 @@
   margin-top: -25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+
+  @media (min-width: $tablet) {
+    margin-top: -48px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+  }
 }
 
 .mates__wrapper {

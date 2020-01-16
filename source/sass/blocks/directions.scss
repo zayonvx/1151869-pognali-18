@@ -5,6 +5,11 @@
   border-bottom-right-radius: 25px;
   z-index: 4;
   margin-top: -25px;
+
+  @media (min-width: $tablet) {
+    border-bottom-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
 }
 
 .directions__wrapper {
@@ -14,8 +19,11 @@
   padding-bottom: 90px;
 
   @media (min-width: $tablet) {
-    padding-top: 77px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 210px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 41px top 108px;
   }
 
   @media (min-width: $desktop) {
@@ -28,7 +36,8 @@
 
 .directions__text-wrapper {
   @media (min-width: $tablet) {
-    width: 50%;
+    width: 350px;
+    margin-left: 35px;
   }
 }
 
@@ -41,10 +50,10 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet) {
-    padding-left: 35px;
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 60px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop) {
@@ -62,9 +71,10 @@
   padding-right: 50px;
 
   @media (min-width: $tablet) {
-    padding-left: 35px;
     font-size: 28px;
     line-height: 33px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop) {
@@ -79,9 +89,9 @@
   right: 25px;
 
   @media (min-width: $tablet) {
-    left: 35px;
+    left: 70px;
     bottom: 80px;
-    right: 35px;
+    right: 70px;
   }
 
   @media (min-width: $desktop) {
@@ -96,9 +106,24 @@
   @include list-style;
   margin-top: 58px;
   width: 100%;
+  position: relative;
 
   @media (min-width: $tablet) {
-    margin-top: 110px;
+    margin-top: 101px;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 620px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -35px;
+      left: -35px;
+      background-color: #e2e5f2;
+      width: 140px;
+      height: 140px;
+      border-radius: 15px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -109,10 +134,19 @@
 }
 
 .directions__item {
-  background-color: $white;
+  background: #ffffff;
   width: 100%;
 
   &:not(:first-child) {
     margin-top: -20px;
+  }
+
+  @media(min-width: $tablet) {
+    background: linear-gradient(to right, #fff 95%, transparent 100%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
   }
 }
