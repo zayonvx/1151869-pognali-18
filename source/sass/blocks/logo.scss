@@ -15,6 +15,16 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    .logo__image--tablet {
+      display: none;
+    }
+
+    .logo__image--desktop {
+      display: block;
+    }
+  }
 }
 
 .logo__image--blue {

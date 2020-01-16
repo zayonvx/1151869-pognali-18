@@ -18,6 +18,10 @@
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .navigation__address-info {
@@ -109,6 +113,10 @@
     padding-top: 40px;
     align-items: center;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+  }
 }
 
 .navigation__top-wrapper {
@@ -125,6 +133,10 @@
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
 }
 
 .navigation__bottom-wrapper {
@@ -133,8 +145,51 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .navigation__button-toogle {
   @include text-style;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.navigation__menu-list {
+  @media (min-width: $desktop) {
+    display: flex;
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 145px;
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      margin-right: 60px;
+      position: absolute;
+      top: 13px;
+      left: 41px;
+      background-color: #fff;
+    }
+  }
+}
+
+.navigation__site-menu-item {
+  margin-right: 33px;
+}
+
+.navigation__menu-link {
+  @media (min-width: $desktop) {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
 }

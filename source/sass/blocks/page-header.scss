@@ -124,4 +124,11 @@
   @media (min-width: $tablet) {
     display: none;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 42px;
+  }
 }
