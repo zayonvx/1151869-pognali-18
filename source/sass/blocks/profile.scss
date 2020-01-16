@@ -8,8 +8,8 @@
 
   @media (min-width: $tablet) {
     margin-top: -38px;
-    border-bottom-right-radius: 38px;
-    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 }
 
@@ -43,7 +43,7 @@
     line-height: 45px;
     width: 100%;
     text-align: center;
-    background-position: right 0 top 290px;
+    background-image: none;
     padding: 0;
   }
 
@@ -59,13 +59,72 @@
   color: $blue;
   font-weight: 800;
   margin-left: 25px;
+  position: relative;
+  padding-left: 67px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    fill: $blue;
+    margin-bottom: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      background-color: #e2e5f2;
+      border-radius: 50%;
+      top: -28px;
+      left: -25px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 17px;
+      height: 21px;
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17px 21px;
+    }
+  }
 }
 
 .profile__services {
   margin-bottom: 32px;
+  position: relative;
 
   @media (min-width: $tablet) {
     margin-top: 75px;
+    margin-bottom: 55px;
+    &::after {
+      content: "";
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: 1;
+      border-radius: 20px;
+    }
+    &::before {
+      content : "";
+      width: 100px;
+      height: 100px;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      position: absolute;
+      top: 215px;
+      right: 45px;
+      z-index: 2;
+    }
   }
 
   @media (min-width: $desktop) {

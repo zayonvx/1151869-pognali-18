@@ -17,6 +17,7 @@
 .services__text-wrapper {
   @include text-style;
   color: $gray;
+  z-index: 3;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
@@ -43,6 +44,10 @@
 
 .services__price {
   @include text-style;
+
+  @media (min-width: $tablet) {
+    z-index: 2;
+  }
 }
 
 .services__text {
@@ -68,7 +73,7 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    left: 40px;
+    left: 0;
     width: 67px;
     height: 67px;
   }
