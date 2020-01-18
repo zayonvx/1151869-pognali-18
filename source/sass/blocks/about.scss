@@ -17,6 +17,10 @@
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .about__wrapper {
@@ -48,6 +52,16 @@
 
   @media (min-width: $desktop) {
     padding-bottom: 165px;
+    padding-top: 300px;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: top 292px right 45px;
+    &::before {
+      top: 280px;
+      left: 60px;
+      width: 215px;
+      height: 215px;
+      border-radius: 15px;
+    }
   }
 }
 
@@ -68,8 +82,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
-    margin-bottom: 60px;
+    padding-left: 70px;
+    margin-bottom: 57px;
   }
 }
 
@@ -92,8 +106,10 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
-    margin-bottom: 50px;
+    padding-left: 70px;
+    margin-bottom: 38px;
+    width: 53%;
+    min-height: 90px;
   }
 }
 
@@ -112,7 +128,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
+    padding-left: 70px;
+    width: 40%;
   }
 }
 
@@ -127,6 +144,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 65px;
+    margin-left: 70px;
+    width: 21%;
+    margin-top: 85px;
   }
 }
