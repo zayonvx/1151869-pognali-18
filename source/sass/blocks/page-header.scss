@@ -137,3 +137,38 @@
     right: 42px;
   }
 }
+
+.page-inner {
+  .page-header {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .page-header__wrapper {
+    padding-top: 50px;
+    background-image: none;
+    padding-bottom: 10px;
+  }
+
+  .page-header__title {
+    min-height: 0;
+    margin-bottom: 0;
+    align-self: flex-start;
+    padding-left: 0;
+    position: relative;
+      &::after {
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: #ff8d30;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      z-index: 5;
+    }
+  }
+
+  .page-header__navigation-misc {
+    display: none;
+  }
+}

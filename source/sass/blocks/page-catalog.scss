@@ -1,0 +1,19 @@
+.page-catalog__traveler {
+  @include container;
+  background-color: #edeff6;
+  padding-top: 30px;
+}
+
+.page-catalog__traveler-list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-catalog__traveler-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 15px 18px;
+}
+

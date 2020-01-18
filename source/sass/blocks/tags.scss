@@ -33,3 +33,11 @@
 .tags__title {
   display: none;
 }
+
+.tags__tags-list--align_left {
+  justify-content: flex-start;
+  .tags__tags-item {
+    margin-right: 5px;
+    margin-left: 0;
+  }
+}
