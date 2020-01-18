@@ -22,6 +22,10 @@
   @media (min-width: $tablet) {
     padding-top: 111px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 148px;
+  }
 }
 
 .profile__title {
@@ -48,7 +52,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 75px;
+    padding-left: 20px;
   }
 }
 
@@ -92,6 +96,10 @@
       background-size: 17px 21px;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 94px;
+  }
 }
 
 .profile__services {
@@ -128,6 +136,22 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 160px;
+    &::after {
+      width: 445px;
+      height: 300px;
+      top: -50px;
+      right: 170px;
+    }
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 0px;
+      right: 55px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 133px;
   }
 }

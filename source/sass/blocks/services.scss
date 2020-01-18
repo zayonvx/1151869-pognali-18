@@ -6,6 +6,11 @@
   @media (min-width: $tablet) {
     padding-left: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 75px;
+    position: relative;
+  }
 }
 
 .services__item {
@@ -39,6 +44,11 @@
     margin-right: 35px;
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 810px;
+    margin-right: 328px;
   }
 }
 
