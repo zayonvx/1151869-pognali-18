@@ -8,6 +8,10 @@
   @media (min-width: $tablet) {
     top: 638px;
   }
+
+  @media (min-width: $desktop) {
+    top: 520px;
+  }
 }
 
 .road-map__wrapper {
@@ -27,6 +31,14 @@
     flex-wrap: wrap;
     left: 40px;
     right: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    left: 60px;
+    right: 60px;
+    width: 1320px;
   }
 }
 
@@ -104,7 +116,51 @@
   }
 
   @media (min-width: $desktop) {
-    width: 25%;
+    min-height: 0;
+    width: 388px;
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 107px;
+
+    &:nth-child(1) {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 388px;
+    }
+
+    &:nth-child(2) {
+      margin-left: -72px;
+      padding-left: 30px;
+      padding-right: 75px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    &:nth-child(3) {
+      margin-left: -44px;
+      padding-left: 30px;
+      padding-right: 71px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 388px;
+
+      .road-map__description {
+        width: 65%;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 315px;
+      padding-left: 31px;
+      padding-right: 33px;
+      margin-left: -45px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
   }
 }
 
@@ -127,5 +183,11 @@
   font-size: 30px;
   margin-top: 15px;
   margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    font-size: 24px;
+    margin-top: 0;
   }
 }
