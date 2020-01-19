@@ -22,7 +22,7 @@
   padding-left: 15px;
   &::before {
     content: "";
-    background-color: #81e31e;
+    background-color: #f97676;
     height: 7px;
     width: 7px;
     border-radius: 50%;
@@ -31,9 +31,9 @@
     top: 9px;
   }
 
-  &--offline {
+  &--online {
     &::before {
-      background-color: #f97676;
+      background-color: #81e31e;
     }
   }
 }
@@ -49,5 +49,5 @@
 }
 
 .traveler-card__button-clear {
-  margin-top: 30px;
+  margin-top: 20px;
 }

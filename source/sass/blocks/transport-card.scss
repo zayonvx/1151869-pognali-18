@@ -17,5 +17,11 @@
     justify-content: center;
     align-items: center;
     background-color: #edeff6;
+    fill: $gray;
+    opacity: 1;
+  }
+
+  .transport-card--active {
+    fill: $blue;
   }
 }
