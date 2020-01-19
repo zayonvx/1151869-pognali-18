@@ -27,8 +27,8 @@
     width: 7px;
     border-radius: 50%;
     position: absolute;
-    right: 0;
-    top: 7px;
+    right: 2px;
+    top: 9px;
   }
 
   &--offline {
@@ -39,7 +39,9 @@
 }
 
 .traveler-card__tags {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
 .traveler-card__countries {

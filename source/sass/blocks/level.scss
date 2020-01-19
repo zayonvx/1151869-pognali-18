@@ -3,18 +3,18 @@
 }
 
 .level {
-  margin-left: 25px;
-  margin-right: -20px;
+  margin-left: 10px;
   display: flex;
   height: 18px;
-
-  &::after {
+  color: #828282;
+  display: flex;
+  margin-right: -18px;
+  &:after {
     content: "";
-    margin-left: 13px;
-    width: 11px;
+    margin-left: 10px;
+    width: 12px;
     height: 1px;
-    background-color: #444;
-    opacity: 0.2;
+    background-color: #828282;
     align-self: center;
   }
 }
