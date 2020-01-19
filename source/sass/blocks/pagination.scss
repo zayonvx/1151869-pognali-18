@@ -1,0 +1,47 @@
+.pagination {
+  @include list-style;
+  display: flex;
+}
+
+.pagination__pagination-step {
+  width: 135px;
+  height: 50px;
+  background-color: #ffffff;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    &:after {
+      content: "";
+      background-image: url("../../img/triangle-arrow-left.svg");
+      width: 10px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: 10px;
+      height: 20px;
+      background-position: center center;
+    }
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &:after {
+      content: "";
+      background-image: url("../../img/triangle-arrow-right.svg");
+      width: 10px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: 10px;
+      height: 20px;
+      background-position: center center;
+    }
+  }
+}
