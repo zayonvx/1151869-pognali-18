@@ -142,12 +142,22 @@
   .page-header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    @media (min-width: $tablet) {
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
   }
 
   .page-header__wrapper {
     padding-top: 50px;
     background-image: none;
     padding-bottom: 10px;
+
+    @media (min-width: $tablet) {
+      padding-top: 128px;
+      padding-bottom: 62px;
+    }
   }
 
   .page-header__title {
@@ -165,6 +175,18 @@
       left: 0;
       bottom: -10px;
       z-index: 5;
+    }
+
+    @media (min-width: $tablet) {
+      width: 24%;
+      padding-left: 35px;
+      &::after {
+        bottom: -67px;
+        left: 35px;
+        width: 175%;
+        height: 8px;
+        border-radius: 8px;
+      }
     }
   }
 

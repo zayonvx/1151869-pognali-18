@@ -4,12 +4,24 @@
   position: relative;
 }
 
+.traveler-card__top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .traveler-card__photo {
   border-radius: 50%;
   width: 70px;
   height: 70px;
   background-color: #ccc;
   border: 1px solid red;
+
+  @media (min-width: $tablet) {
+    width: 190px;
+    height: 190px;
+    border-radius: 15px;
+    margin-right: 35px;
+  }
 }
 
 .traveler-card__title {
@@ -20,7 +32,7 @@
   font-weight: 800;
   flex-basis: 20%;
   padding-left: 15px;
-  &::before {
+  &::after {
     content: "";
     background-color: #f97676;
     height: 7px;
@@ -32,8 +44,20 @@
   }
 
   &--online {
-    &::before {
+    &::after {
       background-color: #81e31e;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+    flex-basis: 40%;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    &:after {
+      right: 32px;
+      top: 10px;
     }
   }
 }

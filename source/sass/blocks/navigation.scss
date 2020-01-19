@@ -198,5 +198,9 @@
   .navigation__top-wrapper {
     padding-top: 20px;
     min-height: 34px;
+
+    @media (min-width: $tablet) {
+      padding-top: 5px;
+    }
   }
 }
