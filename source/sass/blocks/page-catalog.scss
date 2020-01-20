@@ -19,7 +19,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-  width: 686px;
+
+  @media (min-width: $tablet) {
+    width: 686px;
+  }
 }
 
 .page-catalog__traveler-item {
