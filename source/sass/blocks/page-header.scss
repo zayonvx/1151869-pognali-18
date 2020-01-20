@@ -158,6 +158,10 @@
       padding-top: 128px;
       padding-bottom: 62px;
     }
+
+    @media (min-width: $desktop) {
+      padding-top: 80px;
+    }
   }
 
   .page-header__title {
@@ -186,6 +190,14 @@
         width: 175%;
         height: 8px;
         border-radius: 8px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 65px;
+      width: 12.5%;
+      &::after {
+        left: 65px;
       }
     }
   }
