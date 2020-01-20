@@ -19,6 +19,10 @@
     background-color: #edeff6;
     fill: $gray;
     opacity: 1;
+
+    @media (min-width: $tablet) {
+      background-color: transparent;
+    }
   }
 
   .transport-card--active {

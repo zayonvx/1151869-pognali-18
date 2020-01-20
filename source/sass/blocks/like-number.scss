@@ -1,10 +1,17 @@
 .like-number {
   width: 100%;
   display: block;
-  margin-left: 85px;
-  margin-top: -22px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 800;
   color: #161c35;
+  margin-left: 85px;
+  margin-top: -22px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 428px;
+    margin-top: -38px;
+  }
 }

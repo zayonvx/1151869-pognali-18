@@ -40,10 +40,21 @@
     color: #1d2e5b;
     text-transform: uppercase;
     margin-left: 15px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 10px;
+    }
   }
 
   .flag__image-wrapper {
     width: 26px;
     height: 18px;
+
+    @media (min-width: $tablet) {
+      width: 35px;
+      height: 24px;
+    }
   }
 }

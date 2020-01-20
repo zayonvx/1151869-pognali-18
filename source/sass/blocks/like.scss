@@ -11,14 +11,26 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 40px;
-  left: 50px;
+  top: 50px;
+  left: 40px;
+
+  @media (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+    top: 140px;
+    left: 370px;
+  }
 }
 
 .like__icon {
   opacity: 0.3;
   height: 11px;
   width: 13px;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 17px;
+  }
 }
 
 .like__text {
