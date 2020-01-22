@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
+  @media (min-width: $desktop) {
+    padding-left: 345px;
+    padding-top: 50px;
+  }
 }
 
 .traveler-card__photo {
@@ -16,6 +21,14 @@
     height: 190px;
     border-radius: 15px;
     margin-right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 285px;
+    height: 285px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -51,10 +64,30 @@
     line-height: 30px;
     position: relative;
     flex-basis: auto;
-    &:after {
+    &::after {
       right: -28px;
       top: 9px;
       margin-left: 25px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -2px;
+    margin-top: 0;
+    margin-bottom: 150px;
+    &::after {
+      background-color: transparent;
+    }
+
+    &::before {
+      content: "";
+      background-color: #f97676;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+      position: absolute;
+      left: -25px;
+      top: 9px;
     }
   }
 }
@@ -68,6 +101,11 @@
     margin-top: -145px;
     margin-left: 228px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-top: -132px;
+  }
 }
 
 .traveler-card__countries {
@@ -75,6 +113,11 @@
   @media (min-width: $tablet) {
     order: 1;
     margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -190px;
+    margin-left: 325px;
   }
 }
 
@@ -86,14 +129,24 @@
     margin-left: 225px;
     width: 145px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: -515px;
+    margin-top: -40px;
+  }
 }
 
 .traveler-card__transports {
   @media (min-width: $tablet) {
     order: 2;
-    width: 100%;
+    width: 20px;
     position: absolute;
-    right: -580px;
+    left: 580px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 670px;
+    top: 200px;
   }
 }
 
@@ -101,9 +154,15 @@
   position: absolute;
   top: 40px;
   left: 50px;
+
   @media (min-width: $tablet) {
     top: 140px;
     left: 370px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 192px;
+    left: 488px;
   }
 }
 
@@ -114,6 +173,11 @@
   @media (min-width: $tablet) {
     margin-left: 427px;
     margin-top: -38px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 200px;
+    margin-top: -30px;
   }
 }
 
@@ -126,5 +190,10 @@
     margin-left: 90px;
     margin-top: -78px;
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 250px;
+    margin-top: -70px;
   }
 }
