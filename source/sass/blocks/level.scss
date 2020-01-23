@@ -14,7 +14,7 @@
     line-height: 24px;
     left: 18px;
 
-    &:after {
+    &::after {
       border-top: 0.5px solid #c3c3c3;
       padding-top: 1px;
       content: "level";
@@ -97,5 +97,59 @@
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
+  }
+}
+
+.people-card {
+  .level {
+    &::after {
+      display: none;
+    }
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.6;
+    }
+  }
+
+  .level__text {
+    display: none;
+  }
+
+  .level__value {
+    height: 60px;
+    width: 60px;
+    top: 0;
+  }
+
+  .level__number {
+    color: #fff;
+    top: 18px;
+    left: 18px;
+
+    @media (min-width: $tablet) {
+      top: 15px;
+      left: 18px;
+    }
+    &::after {
+      border-top: 0.5px solid #fff;
+      padding-top: 1px;
+      content: "level";
+      font-size: 14px;
+      line-height: 14px;
+      color: #fff;
+      font-weight: 300;
+
+      @media (min-width: $tablet) {
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        margin-left: -3px;
+        margin-top: -2px;
+      }
+    }
   }
 }

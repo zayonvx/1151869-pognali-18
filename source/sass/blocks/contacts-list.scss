@@ -5,9 +5,17 @@
 .contacts-list__contacts-item {
   &:first-child {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 35px;
+    }
   }
   &:last-child {
     margin-bottom: 59px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 160px;
+    }
   }
 }
 
@@ -22,6 +30,12 @@
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 30px;
+  }
 }
 
 .contacts-list__icon-wrapper {
@@ -37,4 +51,10 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 65px;
+    height: 65px;
+    top: -30px;
+  }
 }

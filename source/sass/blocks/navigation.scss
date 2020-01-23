@@ -10,6 +10,19 @@
   color: $blue-light;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop) {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-right: 34px;
+  }
 }
 
 .navigation__button-clear {
@@ -48,6 +61,10 @@
     left: 0;
     width: 100%;
     z-index: 999;
+
+    @media (min-width: $tablet) {
+      align-items: flex-start;
+    }
   }
 
   .navigation__logo {
@@ -59,6 +76,10 @@
 
     .logo__image--blue {
       display: block;
+
+      @media (min-width: $tablet) {
+        display: none;
+      }
     }
   }
 
@@ -75,18 +96,34 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+
+    @media (min-width: $tablet) {
+      order: 2;
+    }
   }
+
 
   .navigation__menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 59px;
+
+    @media (min-width: $tablet) {
+      order: 2;
+      align-items: flex-start;
+      margin-top: 50px;
+      margin-bottom: 145px;
+    }
   }
 
   .navigation__button-clear {
     display: block;
     margin-bottom: 51px;
+
+    @media (min-width: $tablet) {
+      margin-left: auto;
+    }
   }
 
   .navigation__contacts-list {
@@ -97,11 +134,35 @@
   .navigation__socials-list {
     display: flex;
     justify-content: center;
+
+    @media (min-width: $tablet) {
+      justify-content: flex-start;
+    }
   }
 
   .navigation__top-wrapper {
     padding: 19px 0 30px 0;
     margin-bottom: 49px;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      z-index: 2;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      padding: 0;
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  .navigation__bottom-wrapper {
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      padding-left: 60px;
+    }
   }
 }
 
@@ -181,18 +242,10 @@
   }
 }
 
-.navigation__site-menu-item {
-  margin-right: 33px;
-}
+// .navigation__site-menu-item {
+//   margin-right: 33px;
+// }
 
-.navigation__menu-link {
-  @media (min-width: $desktop) {
-    color: #fff;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
-  }
-}
 
 .page-inner {
   .navigation__top-wrapper {

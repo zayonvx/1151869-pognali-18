@@ -64,13 +64,13 @@
   font-weight: 800;
   margin-left: 25px;
   position: relative;
-  padding-left: 67px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     fill: $blue;
     margin-bottom: 45px;
+    padding-left: 67px;
 
     &::before {
       content: "";

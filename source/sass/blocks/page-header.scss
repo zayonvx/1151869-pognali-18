@@ -140,12 +140,18 @@
 
 .page-inner {
   .page-header {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 25px 15px;
+    border-bottom-right-radius: 25px 15px;
+    position: relative;
 
     @media (min-width: $tablet) {
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      border-bottom-left-radius: 50px 45px;
+      border-bottom-right-radius: 50px 45px;
     }
   }
 
@@ -157,6 +163,8 @@
     @media (min-width: $tablet) {
       padding-top: 128px;
       padding-bottom: 62px;
+      flex-direction: row;
+      align-items: center;
     }
 
     @media (min-width: $desktop) {
@@ -184,6 +192,7 @@
     @media (min-width: $tablet) {
       width: 24%;
       padding-left: 35px;
+      margin-right: auto;
       &::after {
         bottom: -67px;
         left: 35px;
@@ -202,7 +211,43 @@
     }
   }
 
+  .page-header__link {
+    display: none;
+
+    @media (min-width: $tablet) {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-right: 36px;
+    margin-top: 7px;
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 16px;
+      background-image: url("../../img/return.svg");
+      background-size: 32px 16px;
+      background-repeat: no-repeat;
+      margin-left: 31px;
+      padding-left: 32px;
+    }
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 63px;
+      margin-top: 37px;
+    }
+  }
+
   .page-header__navigation-misc {
     display: none;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      right: 60px;
+    }
   }
 }

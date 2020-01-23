@@ -154,6 +154,18 @@
     margin-top: -20px;
   }
 
+  &:last-child {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #edeff6 75%);
+      width: 100%;
+      height: 48px;
+      z-index: 100;
+    }
+  }
+
   @media(min-width: $tablet) {
     background: linear-gradient(to right, #fff 95%, transparent 100%);
     border-top-left-radius: 20px;
