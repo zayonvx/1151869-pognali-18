@@ -1,21 +1,38 @@
 @import "main";
 @import "blocks/button.scss";
+@import "blocks/button-clear.scss";
 //header
 @import "blocks/navigation.scss";
 @import "blocks/navigation-misc.scss";
 @import "blocks/page-header.scss";
 @import "blocks/road-map.scss";
+@import "blocks/logo.scss";
+@import "blocks/button-toogle.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/socials-list.scss";
 //about
 @import "blocks/about.scss";
 //directions
 @import "blocks/directions.scss";
+@import "blocks/country-card.scss";
 //mates
 @import "blocks/countries.scss";
 @import "blocks/flag.scss";
 @import "blocks/transports.scss";
 @import "blocks/tags.scss";
 @import "blocks/mates.scss";
+@import "blocks/people-card.scss";
+@import "blocks/transport-card.scss";
+@import "blocks/photo.scss";
 //profile
 @import "blocks/profile.scss";
+@import "blocks/services.scss";
 //page-footer
 @import "blocks/page-footer.scss";
+//inner-page
+@import "blocks/page-catalog.scss";
+@import "blocks/traveler-card.scss";
+@import "blocks/like.scss";
+@import "blocks/like-number.scss";
+@import "blocks/level.scss";
+@import "blocks/pagination.scss"

@@ -1,4 +1,58 @@
 .tags__tags-list {
   @include list-style;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 200px;
+
+  @media (min-width: $tablet) {
+    width: 220px;
+  }
+}
+
+.tags__tags-item {
+  margin-left: 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.tags__tags-link {
+  display: flex;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.tags__title {
+  display: none;
+}
+
+.tags__tags-list--align_left {
+  justify-content: flex-start;
+  .tags__tags-item {
+    margin-right: 5px;
+    margin-left: 0;
+  }
+}
+
+.page-inner {
+  .tags__tags-link {
+    font-size: 15px;
+    line-height: 18px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .tags__tags-list {
+    width: 250px;
+  }
 }

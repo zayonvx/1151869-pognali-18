@@ -1,0 +1,130 @@
+.pagination {
+  @include list-style;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    background-color: #fff;
+    width: 690px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    border-radius: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 950px;
+  }
+}
+
+.pagination__pagination-step {
+  width: 135px;
+  height: 50px;
+  background-color: #ffffff;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+    height: auto;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 20px;
+      border: 10px solid transparent;
+      border-right: 10px solid #192144;
+
+      @media (min-width: $tablet) {
+        height: 18px;
+        width: 9px;
+        border: 9px solid transparent;
+        border-right: 9px solid #192144;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 20px;
+      border: 10px solid transparent;
+      border-left: 10px solid #192144;
+
+      @media (min-width: $tablet) {
+        height: 18px;
+        width: 9px;
+        border: 9px solid transparent;
+        border-left: 9px solid #192144;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.pagination__pages-list {
+  display: none;
+  @include list-style;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.pagination__page-item {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffd74b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.pagination__page-number {
+  font-size: 20px;
+  line-height: 30px;
+  color: $blue;
+  font-weight: 800;
+}
+
+.pagination__steps-wrapper {
+  @include list-style;
+  display: flex;
+}

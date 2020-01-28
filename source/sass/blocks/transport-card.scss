@@ -1,0 +1,31 @@
+.transport-card {
+  opacity: 0.3;
+  fill: $blue;
+}
+
+
+.transport-card--active {
+  opacity: 1;
+}
+
+.page-inner {
+  .transport-card {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeff6;
+    fill: $gray;
+    opacity: 1;
+
+    @media (min-width: $tablet) {
+      background-color: transparent;
+    }
+  }
+
+  .transport-card--active {
+    fill: $blue;
+  }
+}

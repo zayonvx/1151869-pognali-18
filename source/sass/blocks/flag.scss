@@ -1,3 +1,70 @@
 .flag__flag-list {
   @include list-style;
 }
+
+.flag__image-wrapper {
+  width: 35px;
+  height: 23px;
+  background-color: #ccc;
+  border: 1px solid red;
+
+  @media (min-width: $tablet) {
+    width: 70px;
+    height: 47px;
+    border-radius: 5px;
+
+    &--small {
+      width: 35px;
+      height: 23px;
+    }
+  }
+}
+
+.flag__title {
+  @include text-style;
+  display: none;
+}
+
+.page-inner {
+  .flag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+    @media (min-width: $desktop) {
+      align-items: unset;
+      align-content: unset;
+    }
+  }
+
+  .flag__title {
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d2e5b;
+    text-transform: uppercase;
+    margin-left: 15px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 20px;
+      margin-top: 1px;
+    }
+  }
+
+  .flag__image-wrapper {
+    width: 26px;
+    height: 18px;
+
+    @media (min-width: $tablet) {
+      width: 35px;
+      height: 25px;
+    }
+  }
+}

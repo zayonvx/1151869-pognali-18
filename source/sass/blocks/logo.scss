@@ -1,0 +1,40 @@
+.logo {
+  display: block;
+  line-height: 0;
+
+  @media(min-width: $tablet) {
+    .logo__image--tablet {
+      display: block;
+    }
+
+    .logo__image--mobile {
+      display: none;
+    }
+
+    .logo__image--white {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .logo__image--tablet {
+      display: none;
+    }
+
+    .logo__image--desktop {
+      display: block;
+    }
+  }
+}
+
+.logo__image--blue {
+  display: none;
+}
+
+.logo__image--tablet {
+  display: none;
+}
+
+.logo__image--desktop {
+  display: none;
+}

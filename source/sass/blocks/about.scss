@@ -1,18 +1,67 @@
 .about {
-  background-color: $blue;
+  background-color: $blue-light;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  z-index: 5;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+}
+
+.about__break {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .about__wrapper {
   @include container();
-  padding-top: 35px;
-  padding-bottom: 85px;
+  padding-top: 268px;
+  padding-bottom: 65px;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: bottom 1px left 17px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
-    padding-top: 45px;
+    padding-top: 240px;
+    padding-bottom: 85px;
+    background-image: url("../../img/about-tablet@1x.png");
+    background-position: top 285px right 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $blue;
+      top: 235px;
+      bottom: 470px;
+      left: 35px;
+      right: 35px;
+      border-radius: 20px;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop) {
     padding-bottom: 165px;
+    padding-top: 300px;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: top 292px right 45px;
+    &::before {
+      top: 280px;
+      left: 60px;
+      width: 215px;
+      height: 215px;
+      border-radius: 15px;
+    }
   }
 }
 
@@ -21,19 +70,20 @@
   color: $orange;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-top: 41px;
+  margin-bottom: 23px;
   padding-left: 25px;
 
   @media (min-width: $tablet) {
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
     padding-left: 35px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
-    margin-bottom: 60px;
+    padding-left: 70px;
+    margin-bottom: 57px;
   }
 }
 
@@ -41,21 +91,25 @@
   color: $white;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 25px;
   font-weight: 300;
   padding-left: 25px;
+  width: 270px;
 
   @media (min-width: $tablet) {
-    width: 50%;
+    width: 335px;
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 32px;
+    display: block;
     padding-left: 35px;
-    margin-bottom: 39px;
+    min-height: 225px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
-    margin-bottom: 50px;
+    padding-left: 70px;
+    margin-bottom: 38px;
+    width: 53%;
+    min-height: 90px;
   }
 }
 
@@ -74,7 +128,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 65px;
+    padding-left: 70px;
+    width: 40%;
   }
 }
 
@@ -83,12 +138,14 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    width: 45%;
+    width: 40%;
     margin-left: 35px;
-    margin-top: 55px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 65px;
+    margin-left: 70px;
+    width: 21%;
+    margin-top: 85px;
   }
 }
